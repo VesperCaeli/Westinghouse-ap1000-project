@@ -6,6 +6,8 @@ The reconstruction database is intentionally allowed to grow from source-discove
 
 This document defines the validation contract enforced by `scripts/validate_registers.py`.
 
+The engineering closure requirements in `docs/05_FLOWPATH_COMPLETENESS_STANDARD.md` are mandatory project rules in addition to the structural CI checks below. A graph can be syntactically valid while still being engineering-incomplete; it may not be declared `PUBLIC_BASELINE_COMPLETE` until the flowpath completeness audit is closed.
+
 ## Layer 1 — all CSV registers
 
 Every CSV under `data/systems/**` is checked automatically.
@@ -85,9 +87,10 @@ As a work package matures:
 3. physical/electrical/control interfaces receive stable port IDs;
 4. all interfaces are represented in connection rows;
 5. the system is promoted to the strict local graph;
-6. after reconciliation, canonical objects/connections may be compiled into the master plant graph.
+6. the flowpath completeness audit checks isolation, bypass, balancing/restriction/equalization, protection, vent/drain/sample/fill/test, instrumentation/actuation, mechanical construction and maintenance hardware;
+7. after reconciliation, canonical objects/connections may be compiled into the master plant graph.
 
-A work package cannot be declared `PUBLIC_BASELINE_COMPLETE` while important public-source hardware remains only in an unconnected research table.
+A work package cannot be declared `PUBLIC_BASELINE_COMPLETE` while important public-source hardware remains only in an unconnected research table or while a mandatory flowpath completeness category is still `SEARCH_REQUIRED`.
 
 ## Boundary rule
 
@@ -118,6 +121,7 @@ As more AP1000 systems mature, the validator will be expanded to enforce object-
 - relief path without a documented final discharge destination;
 - drain/vent/sample branch without a destination;
 - factual dimension/material/tag without source or derivation;
-- fastener/gasket/seal listed without its mating assembly relationship.
+- fastener/gasket/seal listed without its mating assembly relationship;
+- flowpath declared complete while isolation/bypass/balancing/protection/vent-drain-sample/instrumentation/mechanical-construction audit categories remain unresolved.
 
 The goal is not merely syntactically valid CSV. The final database must be mechanically and functionally closed enough that a 1:1 digital plant model cannot contain a pipe, cable, support, valve, instrument or auxiliary system that simply terminates without explanation.
