@@ -1,0 +1,11 @@
+template_item_id,applies_to,part_or_assembly_name,object_type,quantity_per_pump,relationship,evidence_state,source_ids,source_locator,status,notes
+RCP-TPL-001,RCS-RCP-*,Pump hydraulic assembly,pump_hydraulic_assembly,1,Contained by each RCP,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.3 p.5-5,FOUNDATION,Exact casing/diffuser internal breakup pending detailed sources
+RCP-TPL-002,RCS-RCP-*,Impeller,impeller,1,Attached to rotor shaft,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.3 p.5-5,FOUNDATION,Geometry/material unresolved
+RCP-TPL-003,RCS-RCP-*,Rotor shaft,shaft,1,Connects impeller motor rotor and flywheel,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.3 p.5-5,FOUNDATION,Exact shaft sections/material unresolved
+RCP-TPL-004,RCS-RCP-*,Electric induction motor,motor_assembly,1,Drives rotor shaft,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.3 p.5-5,FOUNDATION,Windings/terminals/cooling internals pending
+RCP-TPL-005,RCS-RCP-*,Motor rotor,motor_rotor,1,Rotating element of induction motor,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.3 p.5-5,FOUNDATION,Exact construction unresolved
+RCP-TPL-006,RCS-RCP-*,Motor stator,motor_stator,1,Stationary element of induction motor,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.3 p.5-5,FOUNDATION,Exact construction unresolved
+RCP-TPL-007,RCS-RCP-*,Rotor pressure can,pressure_can,1,Corrosion-resistant can enclosing rotor,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.3 p.5-5,FOUNDATION,Source says both rotor and stator are encased in corrosion-resistant cans; exact construction pending
+RCP-TPL-008,RCS-RCP-*,Stator pressure can,pressure_can,1,Corrosion-resistant can enclosing stator,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.3 p.5-5,FOUNDATION,Exact construction pending
+RCP-TPL-009,RCS-RCP-*,Coastdown flywheel,flywheel,1,Attached to pump shaft,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.3 p.5-5,FOUNDATION,Uranium-alloy flywheel; detailed alloy/geometry unresolved
+RCP-TPL-010,RCS-RCP-*,Variable-frequency drive,electrical_drive,1,Provides documented variable-speed function under specified plant conditions,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.3 p.5-5,FOUNDATION,Electrical ownership and cabinet/component breakdown to be resolved in ECS/I&C package

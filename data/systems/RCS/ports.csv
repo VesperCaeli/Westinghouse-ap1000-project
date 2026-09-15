@@ -1,0 +1,33 @@
+port_id,object_id,port_name,port_class,service_or_medium,nominal_size,direction,evidence_state,source_ids,source_locator,status,notes
+RCS-RV-OUT-L1,RCS-RV,Loop 1 reactor-vessel outlet,process_outlet,reactor coolant,31 in main hot-leg ID,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 pp.5-4 to 5-5,FOUNDATION,Project-local port identity; actual nozzle tag/geometry pending
+RCS-RV-OUT-L2,RCS-RV,Loop 2 reactor-vessel outlet,process_outlet,reactor coolant,31 in main hot-leg ID,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 pp.5-4 to 5-5,FOUNDATION,Project-local port identity; actual nozzle tag/geometry pending
+RCS-RV-IN-L1A,RCS-RV,Loop 1A reactor-vessel inlet,process_inlet,reactor coolant,22 in main cold-leg ID,in,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 pp.5-4 to 5-5,FOUNDATION,Project-local port identity; actual nozzle tag/geometry pending
+RCS-RV-IN-L1B,RCS-RV,Loop 1B reactor-vessel inlet,process_inlet,reactor coolant,22 in main cold-leg ID,in,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 pp.5-4 to 5-5,FOUNDATION,Project-local port identity; actual nozzle tag/geometry pending
+RCS-RV-IN-L2A,RCS-RV,Loop 2A reactor-vessel inlet,process_inlet,reactor coolant,22 in main cold-leg ID,in,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 pp.5-4 to 5-5,FOUNDATION,Project-local port identity; actual nozzle tag/geometry pending
+RCS-RV-IN-L2B,RCS-RV,Loop 2B reactor-vessel inlet,process_inlet,reactor coolant,22 in main cold-leg ID,in,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 pp.5-4 to 5-5,FOUNDATION,Project-local port identity; actual nozzle tag/geometry pending
+RCS-HL-1-IN,RCS-HL-1,Hot leg 1 upstream end,pipe_end,reactor coolant,31 in ID,in,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.4 p.5-5,FOUNDATION,
+RCS-HL-1-OUT,RCS-HL-1,Hot leg 1 downstream end,pipe_end,reactor coolant,31 in ID,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.4 p.5-5,FOUNDATION,
+RCS-HL-2-IN,RCS-HL-2,Hot leg 2 upstream end,pipe_end,reactor coolant,31 in ID,in,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.4 p.5-5,FOUNDATION,
+RCS-HL-2-OUT,RCS-HL-2,Hot leg 2 downstream end,pipe_end,reactor coolant,31 in ID,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.4 p.5-5,FOUNDATION,
+RCS-SG-1-PRI-IN,RCS-SG-1,Steam generator 1 primary inlet,process_inlet,reactor coolant,31 in hot-leg interface,in,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.2-5.1.3.4 pp.5-4 to 5-5,FOUNDATION,Exact nozzle geometry pending
+RCS-SG-2-PRI-IN,RCS-SG-2,Steam generator 2 primary inlet,process_inlet,reactor coolant,31 in hot-leg interface,in,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.2-5.1.3.4 pp.5-4 to 5-5,FOUNDATION,Exact nozzle geometry pending
+RCS-SG-1-RCP-1A-OUT,RCS-SG-1,SG1 channel-head outlet to RCP 1A,process_outlet,reactor coolant,,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.3-5.1.3.4 p.5-5,FOUNDATION,RCP suction integration/weld geometry pending
+RCS-SG-1-RCP-1B-OUT,RCS-SG-1,SG1 channel-head outlet to RCP 1B,process_outlet,reactor coolant,,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.3-5.1.3.4 p.5-5,FOUNDATION,RCP suction integration/weld geometry pending
+RCS-SG-2-RCP-2A-OUT,RCS-SG-2,SG2 channel-head outlet to RCP 2A,process_outlet,reactor coolant,,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.3-5.1.3.4 p.5-5,FOUNDATION,RCP suction integration/weld geometry pending
+RCS-SG-2-RCP-2B-OUT,RCS-SG-2,SG2 channel-head outlet to RCP 2B,process_outlet,reactor coolant,,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.3-5.1.3.4 p.5-5,FOUNDATION,RCP suction integration/weld geometry pending
+RCS-RCP-1A-SUCT,RCS-RCP-1A,RCP 1A suction,process_inlet,reactor coolant,,in,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.3-5.1.3.4 p.5-5,FOUNDATION,Direct SG channel-head integration
+RCS-RCP-1B-SUCT,RCS-RCP-1B,RCP 1B suction,process_inlet,reactor coolant,,in,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.3-5.1.3.4 p.5-5,FOUNDATION,Direct SG channel-head integration
+RCS-RCP-2A-SUCT,RCS-RCP-2A,RCP 2A suction,process_inlet,reactor coolant,,in,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.3-5.1.3.4 p.5-5,FOUNDATION,Direct SG channel-head integration
+RCS-RCP-2B-SUCT,RCS-RCP-2B,RCP 2B suction,process_inlet,reactor coolant,,in,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.3-5.1.3.4 p.5-5,FOUNDATION,Direct SG channel-head integration
+RCS-RCP-1A-DISCH,RCS-RCP-1A,RCP 1A discharge,process_outlet,reactor coolant,22 in cold-leg interface,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.4 p.5-5,FOUNDATION,
+RCS-RCP-1B-DISCH,RCS-RCP-1B,RCP 1B discharge,process_outlet,reactor coolant,22 in cold-leg interface,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.4 p.5-5,FOUNDATION,
+RCS-RCP-2A-DISCH,RCS-RCP-2A,RCP 2A discharge,process_outlet,reactor coolant,22 in cold-leg interface,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.4 p.5-5,FOUNDATION,
+RCS-RCP-2B-DISCH,RCS-RCP-2B,RCP 2B discharge,process_outlet,reactor coolant,22 in cold-leg interface,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.4 p.5-5,FOUNDATION,
+RCS-CL-1A-IN,RCS-CL-1A,Cold leg 1A upstream end,pipe_end,reactor coolant,22 in ID,in,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.4 p.5-5,FOUNDATION,
+RCS-CL-1A-OUT,RCS-CL-1A,Cold leg 1A downstream end,pipe_end,reactor coolant,22 in ID,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.4 p.5-5,FOUNDATION,
+RCS-CL-1B-IN,RCS-CL-1B,Cold leg 1B upstream end,pipe_end,reactor coolant,22 in ID,in,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.4 p.5-5,FOUNDATION,
+RCS-CL-1B-OUT,RCS-CL-1B,Cold leg 1B downstream end,pipe_end,reactor coolant,22 in ID,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.4 p.5-5,FOUNDATION,
+RCS-CL-2A-IN,RCS-CL-2A,Cold leg 2A upstream end,pipe_end,reactor coolant,22 in ID,in,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.4 p.5-5,FOUNDATION,
+RCS-CL-2A-OUT,RCS-CL-2A,Cold leg 2A downstream end,pipe_end,reactor coolant,22 in ID,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.4 p.5-5,FOUNDATION,
+RCS-CL-2B-IN,RCS-CL-2B,Cold leg 2B upstream end,pipe_end,reactor coolant,22 in ID,in,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.4 p.5-5,FOUNDATION,
+RCS-CL-2B-OUT,RCS-CL-2B,Cold leg 2B downstream end,pipe_end,reactor coolant,22 in ID,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.4 p.5-5,FOUNDATION,
