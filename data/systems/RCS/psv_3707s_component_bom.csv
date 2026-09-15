@@ -1,0 +1,46 @@
+bom_item_id,applies_to,baker_hughes_ref_no,part_name,quantity_per_valve,object_type,evidence_state,source_ids,source_locator,status,notes
+PSV-3707S-001,PZR-RLF-001,1,Base inlet facing,1,valve_base_inlet_facing,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,AP1000-specific nomenclature figure
+PSV-3707S-002,PZR-RLF-001,1A,Base,1,valve_base,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-003,PZR-RLF-001,1B,Nozzle,1,valve_nozzle,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,Pressure-containing inlet flow passage/fixed seat element
+PSV-3707S-004,PZR-RLF-001,3,Bonnet,1,valve_bonnet,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-005,PZR-RLF-001,4,Spindle,1,valve_spindle,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-006,PZR-RLF-001,5,Disc,1,valve_disc,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,Pressure-containing moving closure element
+PSV-3707S-007,PZR-RLF-001,6,Disc collar,1,disc_collar,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-008,PZR-RLF-001,7,Disc holder,1,disc_holder,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-009,PZR-RLF-001,8,Lower adjusting ring,1,adjusting_ring,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-010,PZR-RLF-001,9,Upper adjusting ring,1,adjusting_ring,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-011,PZR-RLF-001,10,Spring and washers assembly,1,spring_assembly,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,Parent assembly for spring and two spring washers
+PSV-3707S-012,PZR-RLF-001,10A,Spring,1,compression_spring,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-013,PZR-RLF-001,10B,Bottom spring washer,1,spring_washer,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-014,PZR-RLF-001,10C,Top spring washer,1,spring_washer,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-015,PZR-RLF-001,11,Compression screw,1,compression_screw,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-016,PZR-RLF-001,12,Cap screw,4,cap_screw,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,Exact thread/material/torque to resolve from GA/as-built drawing where public
+PSV-3707S-017,PZR-RLF-001,13,Plunger,1,plunger,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-018,PZR-RLF-001,14,Bolted cap,1,bolted_cap,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-019,PZR-RLF-001,15,Disc guide,1,disc_guide,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-020,PZR-RLF-001,16,Compression screw locknut,1,locknut,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-021,PZR-RLF-001,17,Stud,10,stud,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,Function/size/material to map from GA drawing
+PSV-3707S-022,PZR-RLF-001,18,Stud,2,stud,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,Distinct ref from item 17
+PSV-3707S-023,PZR-RLF-001,19,Nut,14,nut,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,Map nut usage to associated studs from drawing
+PSV-3707S-024,PZR-RLF-001,20,Cover plate,1,cover_plate,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-025,PZR-RLF-001,21,Limit switch assembly,1,limit_switch_assembly,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,Connect to PSV position-indication I&C boundary
+PSV-3707S-026,PZR-RLF-001,22,Bracket kit,1,bracket_kit,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,Associated mounting relationship to limit switch to verify from drawing
+PSV-3707S-027,PZR-RLF-001,23,Upper adjusting ring pin,1,adjusting_ring_pin,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-028,PZR-RLF-001,24,Lower adjusting ring pin,1,adjusting_ring_pin,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-029,PZR-RLF-001,25,Drain plug,1,drain_plug,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,Drain destination/interface requires plant installation drawing
+PSV-3707S-030,PZR-RLF-001,26,Lift stop,1,lift_stop,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-031,PZR-RLF-001,27,Cotter pin,2,cotter_pin,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-032,PZR-RLF-001,28,Inlet stud,12,inlet_stud,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,One valve has 12 inlet studs
+PSV-3707S-033,PZR-RLF-001,29,Inlet stud nut,12,inlet_stud_nut,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,One per inlet stud
+PSV-3707S-034,PZR-RLF-001,30,Outlet stud,32,outlet_stud,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,Outlet arrangement includes two outlet gaskets; flange geometry to resolve
+PSV-3707S-035,PZR-RLF-001,31,Outlet stud nut,32,outlet_stud_nut,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,One per outlet stud
+PSV-3707S-036,PZR-RLF-001,32,Gag plug,1,gag_plug,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-037,PZR-RLF-001,33,Gag bolt,1,gag_bolt,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-038,PZR-RLF-001,34,ASME Section III nameplate,1,nameplate,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-039,PZR-RLF-001,35,Tag plate,1,tag_plate,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-040,PZR-RLF-001,36,Seal wire,1,seal_wire,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-041,PZR-RLF-001,37,Seal,1,seal,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-042,PZR-RLF-001,38,Nameplate/tag-plate screw,4,screw,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,
+PSV-3707S-043,PZR-RLF-001,39,Inlet gasket,1,gasket,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,Material/specification is as-built drawing dependent
+PSV-3707S-044,PZR-RLF-001,40,Outlet gasket,2,gasket,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,Material/specification is as-built drawing dependent
+PSV-3707S-045,PZR-RLF-001,41,Tag plate,1,tag_plate,VERIFIED_PUBLIC,SRC-0204,Baker Hughes AP1000 3707S manual Fig.2C p.11,ACTIVE,Second tag-plate reference in AP1000 figure; exact function/text to resolve
