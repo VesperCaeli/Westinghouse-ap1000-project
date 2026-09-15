@@ -1,0 +1,42 @@
+connection_id,from_port_id,to_port_id,connection_class,service_or_medium,nominal_size,evidence_state,source_ids,source_locator,status,notes
+ADS-CONN-001,ADS-PZR-BND-OUT,ADS-PZR-HDR-IN,pressure_boundary_flow,reactor coolant steam,,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.1.3.7,ACTIVE,Exact nozzle/header spool geometry unresolved
+ADS-CONN-002,ADS-PZR-HDR-S1A,V011A-IN,pipe_segment,reactor coolant steam,4 in,VERIFIED_PUBLIC,SRC-0007,AP1000 Technical Specification ADS description,ACTIVE,Exact spool fittings welds supports and drains unresolved
+ADS-CONN-003,V011A-OUT,V001A-IN,pipe_segment,reactor coolant steam,4 in,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1,ACTIVE,
+ADS-CONN-004,V001A-OUT,ADS-COMMON-A-S1,pipe_segment,reactor coolant steam,4 in,VERIFIED_PUBLIC,SRC-0002;SRC-0007,DCD Rev.19 / AP1000 Tech Specs,ACTIVE,
+ADS-CONN-005,ADS-PZR-HDR-S1B,V011B-IN,pipe_segment,reactor coolant steam,4 in,VERIFIED_PUBLIC,SRC-0007,AP1000 Technical Specification ADS description,ACTIVE,
+ADS-CONN-006,V011B-OUT,V001B-IN,pipe_segment,reactor coolant steam,4 in,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1,ACTIVE,
+ADS-CONN-007,V001B-OUT,ADS-COMMON-B-S1,pipe_segment,reactor coolant steam,4 in,VERIFIED_PUBLIC,SRC-0002;SRC-0007,DCD Rev.19 / AP1000 Tech Specs,ACTIVE,
+ADS-CONN-008,ADS-PZR-HDR-S2A,V012A-IN,pipe_segment,reactor coolant steam,8 in,VERIFIED_PUBLIC,SRC-0007,AP1000 Technical Specification ADS description,ACTIVE,
+ADS-CONN-009,V012A-OUT,V002A-IN,pipe_segment,reactor coolant steam,8 in,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1,ACTIVE,
+ADS-CONN-010,V002A-OUT,ADS-COMMON-A-S2,pipe_segment,reactor coolant steam,8 in,VERIFIED_PUBLIC,SRC-0002;SRC-0007,DCD Rev.19 / AP1000 Tech Specs,ACTIVE,
+ADS-CONN-011,ADS-PZR-HDR-S2B,V012B-IN,pipe_segment,reactor coolant steam,8 in,VERIFIED_PUBLIC,SRC-0007,AP1000 Technical Specification ADS description,ACTIVE,
+ADS-CONN-012,V012B-OUT,V002B-IN,pipe_segment,reactor coolant steam,8 in,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1,ACTIVE,
+ADS-CONN-013,V002B-OUT,ADS-COMMON-B-S2,pipe_segment,reactor coolant steam,8 in,VERIFIED_PUBLIC,SRC-0002;SRC-0007,DCD Rev.19 / AP1000 Tech Specs,ACTIVE,
+ADS-CONN-014,ADS-PZR-HDR-S3A,V013A-IN,pipe_segment,reactor coolant steam,8 in,VERIFIED_PUBLIC,SRC-0007,AP1000 Technical Specification ADS description,ACTIVE,
+ADS-CONN-015,V013A-OUT,V003A-IN,pipe_segment,reactor coolant steam,8 in,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1,ACTIVE,
+ADS-CONN-016,V003A-OUT,ADS-COMMON-A-S3,pipe_segment,reactor coolant steam,8 in,VERIFIED_PUBLIC,SRC-0002;SRC-0007,DCD Rev.19 / AP1000 Tech Specs,ACTIVE,
+ADS-CONN-017,ADS-PZR-HDR-S3B,V013B-IN,pipe_segment,reactor coolant steam,8 in,VERIFIED_PUBLIC,SRC-0007,AP1000 Technical Specification ADS description,ACTIVE,
+ADS-CONN-018,V013B-OUT,V003B-IN,pipe_segment,reactor coolant steam,8 in,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1,ACTIVE,
+ADS-CONN-019,V003B-OUT,ADS-COMMON-B-S3,pipe_segment,reactor coolant steam,8 in,VERIFIED_PUBLIC,SRC-0002;SRC-0007,DCD Rev.19 / AP1000 Tech Specs,ACTIVE,
+ADS-CONN-020,ADS-COMMON-A-OUT,ADS-SPARGER-A-IN,ads_discharge,reactor coolant steam,,VERIFIED_PUBLIC,SRC-0401;SRC-0404,NUREG-1793 Ch.6 / NRC ADS sparger inspection,ACTIVE,Cross-system boundary to PXS sparger A
+ADS-CONN-021,ADS-COMMON-B-OUT,ADS-SPARGER-B-IN,ads_discharge,reactor coolant steam,,VERIFIED_PUBLIC,SRC-0401;SRC-0404,NUREG-1793 Ch.6 / NRC ADS sparger inspection,ACTIVE,Cross-system boundary to PXS sparger B
+ADS-CONN-022,ADS-ATM-VAC-A,V010A-IN,vacuum_relief_path,containment atmosphere,,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 ADS vacuum-relief discussion,ACTIVE,
+ADS-CONN-023,V010A-OUT,ADS-COMMON-A-VAC,vacuum_relief_path,containment atmosphere,,VERIFIED_PUBLIC,SRC-0011;SRC-0409,NUREG-1793 Ch.5 / Vogtle equipment listing,ACTIVE,Prevents excessive header vacuum and IRWST backflow/water hammer
+ADS-CONN-024,ADS-ATM-VAC-B,V010B-IN,vacuum_relief_path,containment atmosphere,,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 ADS vacuum-relief discussion,ACTIVE,
+ADS-CONN-025,V010B-OUT,ADS-COMMON-B-VAC,vacuum_relief_path,containment atmosphere,,VERIFIED_PUBLIC,SRC-0011;SRC-0409,NUREG-1793 Ch.5 / Vogtle equipment listing,ACTIVE,
+ADS-CONN-026,ADS-S4-SRC-A-OUT,V014A-IN,stage4_hotleg_branch,reactor coolant/two-phase,,VERIFIED_PUBLIC,SRC-0011;SRC-0409,NUREG-1793 Ch.5 / Vogtle equipment listing,ACTIVE,Exact RCS tee/nozzle/spool unresolved
+ADS-CONN-027,V014A-OUT,V004A-IN,stage4_series_valve_segment,reactor coolant/two-phase,,VERIFIED_PUBLIC,SRC-0002;SRC-0410,DCD Rev.19 / Vogtle ADS completion evidence,ACTIVE,
+ADS-CONN-028,V004A-OUT,ADS-S4-DISCH-A-IN,stage4_discharge_segment,reactor coolant/two-phase,14 in,VERIFIED_PUBLIC,SRC-0408;SRC-0410,Vogtle Stage-4 ITAAC / ADS completion evidence,ACTIVE,
+ADS-CONN-029,ADS-S4-DISCH-A-OUT,ADS-ATM-S4A,containment_discharge,reactor coolant steam/two-phase,,VERIFIED_PUBLIC,SRC-0408,Vogtle Stage-4 ITAAC,ACTIVE,
+ADS-CONN-030,ADS-S4-SRC-B-OUT,V014B-IN,stage4_hotleg_branch,reactor coolant/two-phase,,VERIFIED_PUBLIC,SRC-0011;SRC-0409,NUREG-1793 Ch.5 / Vogtle equipment listing,ACTIVE,
+ADS-CONN-031,V014B-OUT,V004B-IN,stage4_series_valve_segment,reactor coolant/two-phase,,VERIFIED_PUBLIC,SRC-0002;SRC-0410,DCD Rev.19 / Vogtle ADS completion evidence,ACTIVE,
+ADS-CONN-032,V004B-OUT,ADS-S4-DISCH-B-IN,stage4_discharge_segment,reactor coolant/two-phase,14 in,VERIFIED_PUBLIC,SRC-0408;SRC-0410,Vogtle Stage-4 ITAAC / ADS completion evidence,ACTIVE,
+ADS-CONN-033,ADS-S4-DISCH-B-OUT,ADS-ATM-S4B,containment_discharge,reactor coolant steam/two-phase,,VERIFIED_PUBLIC,SRC-0408,Vogtle Stage-4 ITAAC,ACTIVE,
+ADS-CONN-034,ADS-S4-SRC-C-OUT,V014C-IN,stage4_hotleg_branch,reactor coolant/two-phase,,VERIFIED_PUBLIC,SRC-0011;SRC-0409,NUREG-1793 Ch.5 / Vogtle equipment listing,ACTIVE,
+ADS-CONN-035,V014C-OUT,V004C-IN,stage4_series_valve_segment,reactor coolant/two-phase,,VERIFIED_PUBLIC,SRC-0002;SRC-0410,DCD Rev.19 / Vogtle ADS completion evidence,ACTIVE,
+ADS-CONN-036,V004C-OUT,ADS-S4-DISCH-C-IN,stage4_discharge_segment,reactor coolant/two-phase,14 in,VERIFIED_PUBLIC,SRC-0408;SRC-0410,Vogtle Stage-4 ITAAC / ADS completion evidence,ACTIVE,
+ADS-CONN-037,ADS-S4-DISCH-C-OUT,ADS-ATM-S4C,containment_discharge,reactor coolant steam/two-phase,,VERIFIED_PUBLIC,SRC-0408,Vogtle Stage-4 ITAAC,ACTIVE,
+ADS-CONN-038,ADS-S4-SRC-D-OUT,V014D-IN,stage4_hotleg_branch,reactor coolant/two-phase,,VERIFIED_PUBLIC,SRC-0011;SRC-0409,NUREG-1793 Ch.5 / Vogtle equipment listing,ACTIVE,
+ADS-CONN-039,V014D-OUT,V004D-IN,stage4_series_valve_segment,reactor coolant/two-phase,,VERIFIED_PUBLIC,SRC-0002;SRC-0410,DCD Rev.19 / Vogtle ADS completion evidence,ACTIVE,
+ADS-CONN-040,V004D-OUT,ADS-S4-DISCH-D-IN,stage4_discharge_segment,reactor coolant/two-phase,14 in,VERIFIED_PUBLIC,SRC-0408;SRC-0410,Vogtle Stage-4 ITAAC / ADS completion evidence,ACTIVE,
+ADS-CONN-041,ADS-S4-DISCH-D-OUT,ADS-ATM-S4D,containment_discharge,reactor coolant steam/two-phase,,VERIFIED_PUBLIC,SRC-0408,Vogtle Stage-4 ITAAC,ACTIVE,
