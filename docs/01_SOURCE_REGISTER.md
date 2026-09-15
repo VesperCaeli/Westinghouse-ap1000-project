@@ -48,6 +48,7 @@ This file controls the source universe for the reconstruction. Add individual ch
 | SRC-0422 | A | VOGTLE-3-CURRENT-PUBLIC | NRC Unit-3 PXS wiring/hydrotest inspection record | ADAMS ML20128J831 | Unit-3 combined wiring diagrams for V108A, V117A, V123A, V130A plus PXS hydrotest work packages/isometric families; evidence for electrical/control and pressure-boundary closure |
 | SRC-0423 | A | VOGTLE-3-CURRENT-PUBLIC | NRC Unit-3 operating inspection / IRWST injection squib-valve repair history | ADAMS ML23129A022 | Confirms installed Unit-3 3-PXS-V123A IRWST injection-line squib valve and its physical role between IRWST and reactor vessel/DVI path; operational maintenance/configuration evidence |
 | SRC-0424 | A | AP1000-DCD-CHANGE-HISTORY | NRC AP1000 design-change inspection documenting DCP 864 | ADAMS ML112440588 | Documents CMT outlet-check change from tilting-disk to in-line/nozzle design, addition of six 1-in manual flow-test valves, removal of remote CMT-check position indication, and NRC verification that DCP 864 was incorporated into the AP1000 DCD |
+| SRC-0425 | A | VOGTLE-3-CURRENT-PUBLIC | NRC integrated inspection report 05200025/2022003 / Unit-3 PXS EQ and construction evidence | ADAMS ML22193A291 | Unit-3 installed PXS component walkdowns; vendor EQ report/data-package families; CMT/PRHR/recirculation isometrics; V016B and V125B installation work packages; V117A/V101 disassembly-reassembly records; CMT-B inlet MOV torque record; PXS cable-separation evidence and containment coating/caulking records |
 
 ## Authority codes
 
