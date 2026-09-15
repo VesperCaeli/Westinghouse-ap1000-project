@@ -3,7 +3,8 @@
 
 A green structural validation means the database is internally consistent; it does not
 mean the plant is complete. This script quantifies explicit remaining work and rejects
-impossible completion claims for both component-domain and flowpath audit schemas.
+impossible completion claims for component-domain, flowpath, and whole-station work-package
+controls.
 """
 
 from __future__ import annotations
@@ -15,6 +16,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SYSTEMS = ROOT / "data" / "systems"
+WORK_PACKAGES = ROOT / "data" / "master" / "work_package_completeness.csv"
 
 COMPLETE_STATES = {"COMPLETE", "PUBLIC_BASELINE_COMPLETE"}
 COMPONENT_STATES = COMPLETE_STATES | {"NOT_STARTED", "SEARCH_REQUIRED", "IN_PROGRESS", "PARTIAL", "UNRESOLVED"}
@@ -130,12 +132,46 @@ def main() -> int:
         discovery_rows += len(rows)
         discovery_by_system[path.parent.name] += len(rows)
 
+    wp_rows: list[dict[str, str]] = []
+    wp_lifecycle: Counter[str] = Counter()
+    wp_baseline: Counter[str] = Counter()
+    if WORK_PACKAGES.exists():
+        _, wp_rows = read_table(WORK_PACKAGES)
+        seen: set[str] = set()
+        for lineno, row in enumerate(wp_rows, start=2):
+            wid = row.get("work_package_id", "")
+            if not wid:
+                errors.append(f"{WORK_PACKAGES.relative_to(ROOT)}:{lineno}: missing work_package_id")
+            elif wid in seen:
+                errors.append(f"{WORK_PACKAGES.relative_to(ROOT)}:{lineno}: duplicate work_package_id={wid}")
+            seen.add(wid)
+            wp_lifecycle[row.get("lifecycle_state", "<blank>") or "<blank>"] += 1
+            baseline = row.get("public_baseline_state", "<blank>") or "<blank>"
+            wp_baseline[baseline] += 1
+            if baseline == "PUBLIC_BASELINE_COMPLETE":
+                unresolved_fields = [
+                    name for name in (
+                        "decomposition_state",
+                        "component_audit_state",
+                        "cross_system_closure_state",
+                    ) if row.get(name, "").upper() not in {"COMPLETE", "PUBLIC_BASELINE_COMPLETE", "NOT_APPLICABLE"}
+                ]
+                if unresolved_fields:
+                    errors.append(
+                        f"{WORK_PACKAGES.relative_to(ROOT)}:{lineno}: {wid}: PUBLIC_BASELINE_COMPLETE claimed with unresolved fields="
+                        + ",".join(unresolved_fields)
+                    )
+
     print("AP1000 COMPLETENESS REPORT")
     print(
-        f"audit_files={len(audit_files)} component_audit_rows={component_rows} "
+        f"work_packages={len(wp_rows)} audit_files={len(audit_files)} component_audit_rows={component_rows} "
         f"component_complete={component_complete} component_incomplete={component_rows - component_complete} "
         f"flowpath_audit_rows={flow_rows} flowpath_complete={flow_complete} flowpath_incomplete={flow_rows - flow_complete}"
     )
+
+    if wp_rows:
+        print("work_package_lifecycle: " + " ".join(f"{k}={wp_lifecycle[k]}" for k in sorted(wp_lifecycle)))
+        print("work_package_public_baseline: " + " ".join(f"{k}={wp_baseline[k]}" for k in sorted(wp_baseline)))
 
     for system in sorted(component_by_system):
         counts = component_by_system[system]
@@ -169,9 +205,9 @@ def main() -> int:
     audited_total = component_rows + flow_rows
     complete_total = component_complete + flow_complete
     if audited_total == 0:
-        print("WARNING: no completeness audits have been created yet")
-    elif complete_total == audited_total:
-        print("ALL AUDITED ITEMS CLAIM COMPLETE — perform final unresolved/proprietary/source audit before plant-level closure")
+        print("WARNING: no component/flowpath completeness audits have been created yet")
+    elif complete_total == audited_total and all(k == "PUBLIC_BASELINE_COMPLETE" for k in wp_baseline):
+        print("ALL AUDITED ITEMS AND WORK PACKAGES CLAIM COMPLETE — perform final unresolved/proprietary/source audit before plant-level closure")
     else:
         print("INCOMPLETE BY DESIGN: green result means progress accounting is internally consistent, not that the plant is finished")
 
