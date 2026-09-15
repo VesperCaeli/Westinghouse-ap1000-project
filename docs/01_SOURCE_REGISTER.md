@@ -23,6 +23,8 @@ This file controls the source universe for the reconstruction. Add individual ch
 | SRC-0205 | A | VOGTLE-3 | ITAAC Closure Notification 2.1.02.11a, Index 47 | ND-20-0749 and associated completion package | Plant-specific ADS and reactor-vessel-head-vent valve tag numbers, valve type, indication and active-function evidence |
 | SRC-0206 | A | VOGTLE-3 | NRC construction inspection report/document review set covering RCS functional arrangement and pressure-boundary work | ADAMS ML21041A051 | Public evidence for Vogtle Unit 3 RCS P&ID document numbers/revisions, piping isometrics, weld packages, head-vent lines, instrumentation lines and as-built equipment/document references |
 | SRC-0207 | A | VOGTLE-3/VOGTLE-4 | NRC construction inspection report covering RCS/ADS piping and supports | ADAMS ML19045A614 | Public evidence for ADS piping, P&IDs, valve work, pipe-support calculations and pressurizer-to-ADS installation records |
+| SRC-0208 | B | AP1000 | Westinghouse AP1000 Pre-Construction Safety Report, Chapter 20C Steam Generator | UKP-GW-GL-793 / public Westinghouse report | Vendor nominal Delta-125 SG dimensions, tube count, tube OD/wall/ID/pitch, heat-transfer area, shell dimensions, channel-head thickness and tubesheet thickness; use with US sources for configuration reconciliation |
+| SRC-0209 | A | VOGTLE-3/VOGTLE-4 | NRC Integrated Inspection Reports 05200025/2019001 and 05200026/2019001 | ADAMS ML19135A691, issued 2019-05-15 | Public Vogtle AP1000 SG fabrication evidence and document-number trail including tube schedule, tubesheet machining, channel-head drawings, RCP-to-SG weld specification and final-vessel weld maps |
 
 ## Authority codes
 
