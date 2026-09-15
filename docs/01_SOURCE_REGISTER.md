@@ -20,6 +20,9 @@ This file controls the source universe for the reconstruction. Add individual ch
 | SRC-0202 | A | AP1000-DCD-R19-GENERIC | TR-34 / APP-GW-GLN-016, AP1000 Licensing Design Change Document for Generic Reactor Coolant Pump, Rev. 0 | ADAMS ML063250306 | Detailed RCP flywheel, thrust-bearing and heat-exchanger configuration changes incorporated into certified design |
 | SRC-0203 | B | AP1000/VOGTLE | Curtiss-Wright EMD AP1000 reactor coolant pump public product information | https://electro-mechanicalsystems.curtisswright.com/emd/markets-and-products/power-products-and-services | OEM confirmation of metallic cans, water-lubricated bearings, no shaft seals and flywheel coastdown function |
 | SRC-0204 | B | AP1000 | Consolidated AP1000 3707S Edition of Nuclear 3700 Series Safety Valve Maintenance Manual, Rev. A | Baker Hughes public manual, 2022 | AP1000 pressurizer safety-valve nomenclature, quantities, maintenance parts and interfaces |
+| SRC-0205 | A | VOGTLE-3 | ITAAC Closure Notification 2.1.02.11a, Index 47 | ND-20-0749 and associated completion package | Plant-specific ADS and reactor-vessel-head-vent valve tag numbers, valve type, indication and active-function evidence |
+| SRC-0206 | A | VOGTLE-3 | NRC construction inspection report/document review set covering RCS functional arrangement and pressure-boundary work | ADAMS ML21041A051 | Public evidence for Vogtle Unit 3 RCS P&ID document numbers/revisions, piping isometrics, weld packages, head-vent lines, instrumentation lines and as-built equipment/document references |
+| SRC-0207 | A | VOGTLE-3/VOGTLE-4 | NRC construction inspection report covering RCS/ADS piping and supports | ADAMS ML19045A614 | Public evidence for ADS piping, P&IDs, valve work, pipe-support calculations and pressurizer-to-ADS installation records |
 
 ## Authority codes
 
