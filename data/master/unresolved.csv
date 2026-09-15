@@ -1,0 +1,2 @@
+unresolved_id,scope_object_or_system,question,required_for,priority,configuration,known_public_reference,evidence_state,status,resolution_notes
+UNR-0001,PROJECT,Exact production-level BOM including every fastener/bearing/gasket/consumable is not contained in the generic public licensing basis,Manufacturing-detail completeness,HIGH,AP1000-DCD-R19-GENERIC,NRC DCD/UFSAR public record boundary,UNRESOLVED,OPEN,Populate only when lawfully public source evidence exists; otherwise remain explicit
