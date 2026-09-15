@@ -4,144 +4,151 @@ This file is intentionally long-lived. A gap disappears only when a cited public
 
 ## System topology and plant-specific configuration
 
-- Actual Vogtle tags for the reactor vessel, two steam generators, four RCPs, pressurizer, pressurizer safety valves and main-loop piping remain to be resolved. ADS/head-vent tags are now seeded separately from public Unit 3 ITAAC evidence.
+- Actual Westinghouse/Vogtle equipment tags for the reactor vessel, two SGs, four RCPs, pressurizer and main-loop piping.
 - Exact plant coordinate/elevation/orientation data for each RCS major component.
-- Confirm final current Vogtle Unit 3 pressurizer surge-line hot-leg assignment from plant P&ID/isometric. Public AP1000 test/design material indicates connection to Hot Leg 2, but this is not yet promoted to the plant overlay.
+- Exact hot-leg assignment of the pressurizer surge line in the current Revision-19/Vogtle baseline.
 - Complete list and ownership of every RCS-to-auxiliary-system connection, including CVS, PXS, RNS, primary sampling, WLS, CCS and SGS boundaries.
 - Complete RCS instrumentation list: sensing locations, process taps, thermowells, RTDs, pressure/level/temperature/flow channels, impulse tubing, junction boxes, cabling and signal destinations.
-- Retrieve or otherwise publicly resolve the cited Vogtle RCS P&IDs/isometrics/work packages cataloged in `public_document_map.csv` before extracting unverified line geometry from document titles alone.
+
+## Construction-document retrieval queue
+
+Public NRC inspection records now identify the following high-value AP1000 construction/design documents, but the underlying drawing/specification content still needs to be retrieved or otherwise publicly resolved before dimensions/part details can be promoted:
+
+- APP-RCS-M6-001 / -002 / -003 current generic RCS P&IDs (public inspection records cite Revs. 20/22/17).
+- APP-PXS-M6-001 / -002 / -003 PXS P&IDs (Revs. 16/21/14 cited).
+- APP-RNS-M6-001 RNS P&ID (Rev. 14 cited).
+- APP-CVS-M6-001 CVS P&ID (Rev. 16 cited).
+- SV3-RCS-M6-001 through -004 plant-specific RCS P&IDs and revision history.
+- SV3-GW-P0-007 shop-fabricated piping specification.
+- SV3-GW-P0-008 field-fabricated piping/installation specification.
+- SV3-GW-VLR-002 detailed AP1000 metal/welding-material technical requirements.
+- SV3-GW-VLR-010 supplemental fabrication/inspection requirements.
+- SV3-PH02-Z0-001 / -002 pipe/tubing/instrument-rack support specifications.
+- SV3-PL02-Z0-001 piping class sheets and standard details.
+- SV3-PL02-Z0-101 Class 1 piping/non-Class 1 extension design specification.
+- APP-RNS-PLW-09A / -09B RNS pump suction-line isometrics.
+- APP-RNS-PLW-141 / -161 RNS pump-to-heat-exchanger discharge isometrics.
+- APP-RCS-PLW-041 / -042 / -043 surge-line spool-piece isometrics, now with public revision trail (4/3/4).
+- APP-RCS-PH-11V01011 surge-line pipe-support drawing, Rev. 3 cited.
+- SV4-RCS-PLW-033 / -034 PRHR supply-line isometrics, Revs. 3/2 cited.
+- APP-MV01-V1-001 / -002 reactor-vessel outline elevation/plan.
+- APP-MV01-V2-001 through -008 reactor-vessel/head/nozzle detail drawing family.
+- APP-MV01-V6-126 reactor-vessel vent-pipe drawing.
+- APP-MV01-V6-131 latch-housing penetration drawing.
+- APP-MV01-V6-202 / -204 upper-vessel machining/cladding drawings.
+- APP-MV01-Z0-101 AP1000 reactor-vessel design specification.
+
+Do not substitute drawing titles for drawing content.
 
 ## Reactor vessel
 
-Now resolved at major Revision-19 pressure-boundary level: upper/lower shell forgings, transition ring, lower head, one-piece closure head/flange, 4 × 22-in inlets, 2 × 31-in outlets, 2 × 6.81-in DVI nozzles, 45 × 7-in closure studs, dual metal O-rings, 69 CRDM penetrations, 8 Quickloc instrumentation penetrations, major vessel envelope dimensions, and the four support-box/leg arrangement.
+Resolved beyond the original seed: shell/head pressure-boundary hierarchy, major R19 dimensions/material basis, 4 cold-leg inlet nozzles, 2 hot-leg outlet nozzles, 2 DVI nozzles, four support regions, 45 closure studs, redundant metallic O-rings, 69 CRDM head penetrations, eight Quickloc instrument nozzles, and a public fabrication-document/material-traceability trail.
 
 Still unresolved:
 
-- Exact safe-end dimensions/material mapping for each individual inlet/outlet/DVI nozzle and every associated dissimilar/similar-metal weld.
-- Full shell/head course axial dimensions and individual weld identifiers.
-- Closure-stud length/thread geometry, individual nut/washer quantities/materials and preload/torque requirements.
-- Detailed CRDM head-adapter/housing assemblies and every pressure-boundary weld/attachment; decomposed under reactor/IHP work package.
-- Detailed Quickloc plug/nozzle/thimble part BOM, seals, retainers and fasteners.
-- Reactor vessel head-vent pressure-boundary nozzle/fitting geometry and mapping of Unit 3 tags `RCS-PL-V150A` through `V150D` to exact line segments.
-- Support-pad/base-pad/side-stop dimensions, sliding-surface material/finish, support-box plates/welds/anchors/embedments and shield-wall reinforcement interfaces.
-- Vessel reflective-insulation panel BOM, attachments, flow paths for external vessel cooling, access hardware and removal sequence.
-- Closure-head lifting lug count/geometry/material/weld details.
-- Complete vessel instrumentation taps and local hardware.
+- Full nozzle machining geometry, safe ends, transition geometry and individual nozzle weld identifiers.
+- Exact flange/stud/nut/washer thread geometry, lengths, washer/nut material breakdown and closure preload/torque basis at part level.
+- Vessel shell/head course weld map tied to actual Unit 3 as-built IDs.
+- Complete cladding-map geometry and weld/overlay identifiers.
+- Full CRDM-housing and Quickloc internal/seal/fastener BOM.
+- Reactor-vessel-head vent nozzle/pipe/valve/support breakup.
+- Exact support box/base/embed plate dimensions, materials, welds, anchors, sliding-surface construction and clearances.
+- Insulation package, access hardware and individual lifting-lug geometry/attachments.
+- Resolve plant-specific Unit 3 material-test-report and ASME data-report equivalents to the Unit 4 public traceability set already identified.
 
 ## Steam generators — RCS/primary-side scope
 
-Resolved at current public level: primary channel head, tubesheet, Alloy 690 TT U-tube bundle concept, broached support plates, antivibration bars, primary manways and identified inspection/access openings.
-
-Still unresolved:
-
-- Exact tube count, tube OD/wall thickness, bend radii and complete tube-layout map.
-- Tubesheet geometry/materials/cladding and individual tube-to-tubesheet joint construction.
-- Complete channel-head geometry/divider plate and primary nozzle schedule.
-- Exact RCP suction/outlet nozzle geometry and all SG-to-RCP pressure-boundary weld details.
-- Primary manway covers, hinges/handling features, studs/nuts/washers/gaskets and seal details.
-- SG supports, lateral restraints, insulation, platforms and maintenance-access interfaces.
+- Complete channel-head geometry and primary nozzle schedule.
+- Exact RCP suction/outlet nozzle geometry and weld details.
+- Tube count, tube dimensions, tube pitch, tube-support geometry and tube-to-tubesheet joints: public vendor/reference data exists, but final U.S. R19/Vogtle reconciliation remains required before declaring plant-specific completion.
+- Tubesheet geometry/materials and cladding.
+- Primary manways/covers, studs/nuts/gaskets and maintenance tooling interfaces.
+- Internal primary-side dividers and attachment hardware.
+- SG supports, lateral restraints, snubbers/restraints if any, insulation, platforms and maintenance-access interfaces.
+- Retrieve APP-MB01-Z0-101 and APP-MB01-V2-051/-052/-101/-102/-241 underlying public content where possible.
+- Retrieve Unit 3-specific weld maps to complement the public Unit 4 channel-head/final-vessel weld-map references.
 
 ## Reactor coolant pumps
 
-Now resolved beyond the initial generic pump description:
-
-- single-stage canned-motor architecture;
-- pump casing, thermal barrier, stator shell/cap, impeller and common shaft;
-- metallic rotor/stator cans;
-- water-lubricated bearing architecture;
-- final Revision-19 externally mounted conventional shell-and-tube motor-cavity heat exchanger and Class 1 internal-circulation supply/return piping;
-- stator cooling jacket / CCS heat-sink interface;
-- upper/lower thrust-bearing arrangement integrated around lower flywheel;
-- final upper/lower bimetallic flywheel construction using heavy-alloy segments, Type 403 stainless hubs, 18Ni maraging-steel retaining cylinders and Alloy 690 sealing components;
-- obsolete preliminary depleted-uranium/wraparound-HX concepts explicitly rejected from the Revision-19 model.
+Public evidence now resolves substantially more than the original seed: single-stage canned-motor topology; pressure casing; thermal barrier; stator shell/cap; impeller/shaft; metallic rotor/stator cans; water-lubricated bearing system; upper/lower thrust-bearing arrangement; two bimetallic flywheels and their hub/retainer/shell material architecture; external conventional shell-and-tube motor-cavity heat exchanger; stator cooling jacket; internal-circulation HX piping; VFD; and CCS heat-sink boundary.
 
 Still unresolved:
 
-- Complete pump casing/nozzle/diffuser/flow-passage geometry and material/weld map.
-- Exact impeller geometry/material.
-- Shaft geometry/material and detailed couplings/interfaces.
-- Water-lubricated radial-bearing count, locations, pad geometry/material and exact internal coolant paths.
-- Thrust-bearing shoe/pad count, geometry/material and adjustment/retention hardware.
-- Motor rotor/stator lamination, winding, insulation, terminal and internal electrical details.
+- Full pump casing/nozzle/diffuser/flow-passage geometry and pressure-boundary weld map.
+- Exact impeller geometry/material/individual blade details tied to certified production drawing.
+- Shaft geometry/material and all shaft interfaces.
+- Radial bearing pad/count/geometry/materials and complete water-lubrication flow path.
+- Thrust-bearing shoe/pad count, pivot geometry, clearances and materials.
+- Rotor/stator laminations, winding details, insulation and terminal construction.
 - Metallic can thickness/material specification and joining method.
-- Heavy-alloy flywheel exact alloy, segment count/dimensions, endplate count/dimensions, interference-fit values and weld map.
-- External RCP heat-exchanger primary/secondary nozzle sizes, internals, materials, supports, relief protection, valves and instrumentation.
-- CCS branch tags/sizes/routes/isolation/relief instrumentation.
-- Electrical penetrations/terminals, VFD cabinet internals, cables/connectors and local junction hardware.
-- Every RCP bolt/stud/nut/washer/pin/key/retaining ring/gasket/seal and installation/removal fixture.
+- External RCP heat-exchanger shell/tube count/dimensions/materials, duty, nozzle sizes, supports, drains/vents and both process-side graphs.
+- Stator cooling-jacket exact geometry/ports and CCS branch hardware.
+- Flywheel heavy-alloy exact specification, segment count, dimensions, interference fits, endplate count/thickness, hermetic welds and inspection requirements.
+- Electrical penetrations/terminals, cables/connectors and local junction hardware.
+- VFD cabinet internals and power/control connections.
+- Every bolt/stud/nut/washer/pin/key/retaining ring/gasket/seal and its specification.
+- Installation/removal tooling, lifting points and maintenance supports.
 
-## Pressurizer
-
-Now resolved at major Revision-19 level:
-
-- vertical cylindrical vessel with hemispherical top/bottom heads;
-- design pressure 2485 psig, design temperature 680 F, internal volume 2100 ft3;
-- 18-in surge nozzle, 4-in spray nozzle and 14-in safety-valve-nozzle design basis;
-- one top spray nozzle and two top safety/depressurization header connections;
-- bottom surge connection and removable electrical heaters;
-- 480 Vac / 60 Hz heater grouping: 370-kW control group; 245-kW backup A/B; 370-kW backup C/D;
-- 18-in SA-312 TP316LN surge-line design basis and public spool-document references;
-- pressurizer safety valve internal component BOM from Baker Hughes 3707S public manual.
-
-Still unresolved:
-
-- Certified Revision-19 shell inside diameter/overall vessel height: older public summaries provide values, but they remain intentionally unpromoted until directly reconciled with the certified R19 table/figure.
-- Shell/head course dimensions, materials/cladding and circumferential/longitudinal weld map.
-- Individual immersion-heater count, element wattage, heater wells/penetrations, seals/flanges/connectors and exact power-feed grouping.
-- Spray-line source branches, scoop geometry, valves, control logic, common line geometry and CVS auxiliary-spray hardware.
-- Surge-line exact as-built route, bend geometry, spool/weld map and supports from `APP-RCS-PLW-041/-042/-043` and associated support drawings.
-- Safety/ADS header nozzle assignment and detailed header branch topology.
-- Vessel support/skirt/pads/restraints, insulation panels, manway/access and lifting hardware.
-- Complete pressure/level/temperature tap, transmitter and cable-channel inventory.
-- Detailed internal baffle/diffuser/screen geometry; do not import non-US design details without R19 verification.
-
-## Pressurizer safety valves and discharge trains
-
-Now resolved:
-
-- two AP1000 3707S spring-loaded safety valves;
-- per-valve inlet/discharge path, terminal rupture disk, RCDT leakage-drain boundary, position indication and discharge-temperature monitoring;
-- public vendor nomenclature/BOM down to base, nozzle, bonnet, spindle, disc/collar/holder/guide, upper/lower adjusting rings and pins, spring and washers, compression screw/locknut, plunger, cap, studs/nuts, limit-switch assembly, bracket kit, drain plug, lift stop, cotter pins, inlet/outlet studs and nuts, gag hardware, nameplates/tag plates, seal wire/seal, screws and inlet/outlet gaskets;
-- exact vendor-listed quantities are captured in `psv_3707s_component_bom.csv`.
-
-Still unresolved:
-
-- Exact valve GA dimensions and AP1000 as-built material callouts for every listed part.
-- Thread sizes/pitches, bolting preload/torque, gasket specification and seal details.
-- Exact inlet/discharge line sizes/materials/routes/supports and rupture-disk holder/flange/bolting.
-- Drain branch size/slope/root valves/supports and exact RCDT endpoint.
-- Limit-switch internal part BOM, wiring, junction-box/channel routing and calibration details.
-- PSARV/ADS support-module steel and restraint details where the safety-valve/discharge hardware interfaces with support structures.
-
-## ADS and reactor-vessel-head vent plant overlay
-
-Public Vogtle Unit 3 ITAAC now resolves these tags at the equipment-name/function level:
-
-- ADS Stage 1: `RCS-PL-V001A/B`; isolation `RCS-PL-V011A/B`.
-- ADS Stage 2: `RCS-PL-V002A/B`; isolation `RCS-PL-V012A/B`.
-- ADS Stage 3: `RCS-PL-V003A/B`; isolation `RCS-PL-V013A/B`.
-- ADS Stage 4 squib valves: `RCS-PL-V004A/B/C/D`; associated MOVs `RCS-PL-V014A/B`.
-- Reactor vessel head vent: `RCS-PL-V150A/B/C/D`.
-
-Still unresolved:
-
-- Exact line-by-line topology, pair groupings, sizes, manufacturers/models, pressure classes and actuator details from plant P&IDs/equipment records.
-- Exact valve-to-isometric mapping and supports/restraints.
-- ADS sparger/discharge geometry and IRWST interfaces; detailed ADS ownership belongs primarily to WP-04.
-- Head-vent destination, fittings and precise A/B/C/D series/parallel arrangement from Unit 3 P&IDs/isometrics.
+Important configuration note: the preliminary wraparound motor heat exchanger and preliminary thermal-barrier heat exchanger are obsolete and must not be modeled as Revision-19 hardware.
 
 ## Main-loop piping
 
-Verified public basis currently establishes one 31-in-ID hot leg per loop and two 22-in-ID cold legs per loop. Still unresolved:
+Verified public basis now distinguishes nominal pipe size from flow bore:
+
+- hot legs: NPS 37.5 in; 31 in inside diameter;
+- cold legs: NPS 27.12 in; 22 in inside diameter;
+- surge line: NPS 18 in; actual inside diameter remains unresolved until schedule/wall thickness is established.
+
+Still unresolved:
 
 - Exact centerline coordinates and lengths.
-- Wall thicknesses/schedules and final as-built material heat/lot data.
+- Wall thickness/schedules and OD/bore for surge line and branch piping; exact main-loop fabrication dimensions where not already fixed by R19 tables.
 - Every elbow/bend/reducer/tee/branch/nozzle fitting and its geometry.
 - Every field/shop weld and weld identifier.
 - Every branch connection, instrument tap, vent, drain and sample connection.
 - Every hanger/support/anchor/guide/restraint and local structural attachment.
 - Insulation thickness/material/jacketing and removable sections.
 - NDE/ISI boundaries and inspection-access hardware.
+
+## Pressurizer and connected RCS-owned hardware
+
+Public basis currently resolves the vessel design pressure/temperature/volume, 4-in spray nozzle, 18-in surge nozzle/line NPS, heater-group electrical ratings, safety/depressurization nozzles, safety-valve trains and major instrumentation functions.
+
+Still unresolved:
+
+- Vessel dimensions/course geometry/materials/cladding/weld map.
+- Individual immersion-heater count, element wattage, wells, seals, penetrations, cable connectors and removable hardware.
+- Exact normal-spray source cold legs, line sizes, control/check/root valves, bypass/restrictor hardware and routing.
+- CVS auxiliary-spray source line/tag/valves and exact tie-in.
+- Surge-line schedule/bore, exact spool geometry, weld IDs and complete support set; public spool/support drawing identifiers and revisions are now known.
+- Safety-valve inlet/discharge pipe dimensions/supports and rupture-disk holder/flange/bolting.
+- Water-level/pressure/temperature instrumentation and exact taps.
+- Vessel support/skirt/restraints, insulation, maintenance platforms and access.
+- Manways/covers/gaskets/studs/nuts and internal hardware.
+
+## Relief, ADS and vent interfaces
+
+These interfaces cross ownership with PXS/ADS and reactor-vessel-head-vent functions. Do not duplicate ownership.
+
+- Confirm Revision-19/Vogtle valve quantities/configuration for every ADS stage before creating final individual-valve objects.
+- Resolve every series/parallel path, inlet branch, isolation element, discharge line, sparger, rupture disk and containment discharge point.
+- Resolve PSARV module steel/support members and all valve/piping restraints from public structural sources.
+- Resolve reactor vessel head vent isolation valves, piping, supports and IRWST/containment destination as applicable.
+- Reconcile RCS branch-line IDs in Appendix 3B against current APP-RCS/APP-PXS P&IDs rather than inferring function from line-group tables.
+
+## Cross-system dependency closure
+
+The RCS now has an explicit boundary register. Remaining closure work includes:
+
+- CCS branches to each RCP stator cooling jacket and each external RCP shell-and-tube motor-cavity heat exchanger.
+- Exact normal pressurizer spray source legs and all spray-line hardware.
+- CVS auxiliary spray/charging/letdown/sample/chemistry boundaries.
+- PXS DVI nozzle A/B safe ends, checks/isolation hardware and line ownership.
+- RNS suction boundary through the two pump suction trains and eventual return path.
+- PRHR/ADS line-by-line functional mapping.
+- Reactor-vessel-head-vent pressure boundary through valves/lines/discharge destination.
+- Pressurizer safety-valve leakage drains through WLS/RCDT.
+- Complete RCS process-tap → root valve → impulse/tubing → sensor/transmitter → junction box → cable → control/protection channel graph.
 
 ## Common hardware completeness
 
