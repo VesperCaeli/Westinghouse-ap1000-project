@@ -98,13 +98,16 @@ def split_source_ids(value: str) -> list[str]:
 
 
 def choose_primary_key(fields: list[str]) -> str | None:
-    for field in PRIMARY_KEY_PRIORITY:
-        if field in fields:
-            return field
+    # System-local research tables are deliberately designed with their row key
+    # as the first column. Respect that first, otherwise a ports table would
+    # incorrectly use its repeated owner object_id instead of unique port_id.
     if fields:
         first = fields[0]
         if first.endswith("_id") and first not in {"parent_id", "source_ids"}:
             return first
+    for field in PRIMARY_KEY_PRIORITY:
+        if field in fields:
+            return field
     return None
 
 
@@ -153,18 +156,17 @@ def validate_common_table(
 def validate_master(
     source_ids: set[str], errors: list[str], warnings: list[str]
 ) -> tuple[set[str], set[str]]:
-    _, objects = read_master("objects.csv", errors)
-    _, systems = read_master("systems.csv", errors)
-    _, ports = read_master("ports.csv", errors)
-    _, connections = read_master("connections.csv", errors)
+    object_fields, objects = read_master("objects.csv", errors)
+    system_fields, systems = read_master("systems.csv", errors)
+    port_fields, ports = read_master("ports.csv", errors)
+    connection_fields, connections = read_master("connections.csv", errors)
 
-    for filename, rows in (
-        ("objects.csv", objects),
-        ("systems.csv", systems),
-        ("ports.csv", ports),
-        ("connections.csv", connections),
+    for filename, fields, rows in (
+        ("objects.csv", object_fields, objects),
+        ("systems.csv", system_fields, systems),
+        ("ports.csv", port_fields, ports),
+        ("connections.csv", connection_fields, connections),
     ):
-        fields = list(rows[0].keys()) if rows else []
         validate_common_table(MASTER / filename, fields, rows, source_ids, errors, warnings)
 
     object_ids = nonempty(objects, "object_id")
@@ -219,7 +221,6 @@ def validate_local_graph(
         read_csv_path(connections_path, errors) if connections_path.exists() else ([], [])
     )
 
-    # A strict graph must have the complete object -> port -> connection chain.
     if ports_path.exists() or connections_path.exists():
         if not inventory_path.exists():
             errors.append(f"{system_dir.relative_to(ROOT)}: strict graph has ports/connections but no major_inventory.csv")
