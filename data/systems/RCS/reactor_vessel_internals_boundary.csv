@@ -1,0 +1,5 @@
+boundary_id,parent_scope,interface_item,object_type,quantity,ownership,evidence_state,source_ids,source_locator,status,notes
+RV-INT-BND-001,RCS-RV,Roto-Lock insert,internals_interface,3,WP-03,VERIFIED_PUBLIC,SRC-0002,Rev.19 Tier 2 Figure 5.3-4,BOUNDARY,Record existence/interface at vessel level only; detailed geometry/material/fasteners belong to reactor-internals package
+RV-INT-BND-002,RCS-RV,Reactor-internals alignment pin,alignment_pin,4,WP-03,VERIFIED_PUBLIC,SRC-0002,Rev.19 Tier 2 Figure 5.3-4,BOUNDARY,Exact pin locations/material/dimensions and mating features belong to WP-03
+RV-INT-BND-003,RCS-RV,Flow nozzle,internals_flow_nozzle,24,WP-03,VERIFIED_PUBLIC,SRC-0002,Rev.19 Tier 2 Figure 5.3-4,BOUNDARY,Do not infer final individual dimensions/flow allocation from figure label alone
+RV-INT-BND-004,RCS-RV,Reactor-vessel surveillance specimen basket,materials_surveillance_interface,UNRESOLVED,WP-03,VERIFIED_PUBLIC,SRC-0002,Rev.19 Tier 2 Figure 5.3-4 and vessel surveillance provisions,BOUNDARY,Quantity/capsule loading and exact attachment geometry require dedicated surveillance-program extraction
