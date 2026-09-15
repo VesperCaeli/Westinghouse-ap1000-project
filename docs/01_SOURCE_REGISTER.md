@@ -16,6 +16,9 @@ This file controls the source universe for the reconstruction. Add individual ch
 | SRC-0010 | A | AP1000-DCD-R20-PENDING | Westinghouse AP1000 design certification renewal/amendment application | linked from NRC AP1000 design certification page, submitted 2026-03-27 | Track proposed Revision 20 changes separately; do not merge into R19 baseline until dispositioned |
 | SRC-0011 | A | AP1000-GENERIC | NUREG-1793 Initial Report, Chapter 5, Reactor Coolant System and Connected Systems | https://www.nrc.gov/reading-rm/doc-collections/nuregs/staff/sr1793/initial/chapter5.pdf | Detailed NRC evaluation of RCS topology, components, piping, pressure relief, connected systems and DCD section cross-references |
 | SRC-0012 | A | AP1000-GENERIC | NUREG-1793 Initial Report, Chapter 3, Design of Structures, Components, Equipment, and Systems | https://www.nrc.gov/reading-rm/doc-collections/nuregs/staff/sr1793/initial/chapter3.pdf | Mechanical/structural qualification, supports, relief/ADS-valve module and loading cross-checks |
+| SRC-0013 | A | AP1000-GENERIC | NUREG-1793 Initial Report, Chapter 8, Electric Power Systems | https://www.nrc.gov/sites/default/files/doc_library/cdn/legacy/reading-rm/doc-collections/nuregs/staff/sr1793/initial/chapter8.pdf | Offsite power, onsite AC, standby diesel generators, DC/UPS, transformers, switchgear, buses, distribution, station-blackout design and electrical interfaces |
+| SRC-0014 | A | AP1000-GENERIC | NUREG-1793 Initial Report, Chapter 9, Auxiliary Systems | https://www.nrc.gov/sites/default/files/doc_library/cdn/legacy/reading-rm/doc-collections/nuregs/staff/sr1793/initial/chapter9.pdf | Water systems, component/service cooling, demineralized-water treatment/storage, potable/sanitary/wastewater systems, chilled/hot water, fuel handling, ventilation and other plant auxiliaries |
+| SRC-0015 | A | AP1000-GENERIC | NUREG-1793 Initial Report, Chapter 10, Steam and Power Conversion System | https://www.nrc.gov/reading-rm/doc-collections/nuregs/staff/sr1793/initial/chapter10.pdf | Main steam/turbine/condenser/feedwater/condensate/circulating-water/heat-rejection systems and balance-of-plant power conversion |
 
 ## Authority codes
 
@@ -29,6 +32,12 @@ This file controls the source universe for the reconstruction. Add individual ch
 Each factual field in the master registers must cite one or more `Source ID` values plus a precise locator such as chapter, section, figure, table, drawing number, page, ITAAC number, inspection report section, or public vendor-document identifier.
 
 Do not cite only a search-result snippet when the underlying primary document is available.
+
+## Whole-station source rule
+
+The research boundary is the entire generating station and every public-design-basis interface needed to make the unit physically and functionally complete. Chapter 8 electrical systems, Chapter 9 auxiliary systems, and Chapter 10 power-conversion/heat-rejection systems are coequal with the nuclear steam-supply systems; they are not optional balance-of-plant appendices.
+
+Site-specific systems and interfaces that are intentionally left to a COL holder by the generic DCD must be resolved from the selected plant-specific baseline (initially Vogtle Unit 3 current public licensing/as-built evidence) rather than replaced by generic assumptions.
 
 ## Known public-record limitation
 
