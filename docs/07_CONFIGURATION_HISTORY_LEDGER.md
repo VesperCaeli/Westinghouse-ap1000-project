@@ -65,6 +65,27 @@ A historical feature remains useful evidence, but it must not be instantiated as
 
 **Controlled sources:** SRC-0415; SRC-0412; SRC-0420; SRC-0004.
 
+## CHG-005 — PXS valve leak-test panel removal
+
+**Older public/training description:** Older AP1000 material may describe the PXS valve leak-test subsystem as including a dedicated valve test panel.
+
+**Change:** AP1000 design change `APP-GW-GEE-3449`, titled **Removal of PXS Valve Test Panel**, was approved for implementation. A later public Westinghouse AP1000 plant description still identifies the valve leak-test subsystem and permanent test connections for four PXS accumulator isolation check valves and eight RNS RCS-pressure-boundary valves, but does not describe the removed panel.
+
+**Current disposition:**
+- dedicated PXS valve test panel: `CONFIRMED_ABSENT` from current modeled configuration.
+- permanent valve leak-test subsystem/test connections: `CURRENT_BASELINE`.
+- exact piping/tubing, root/test valves, pressure-source routing, drains/vents and local connection hardware: `UNRESOLVED_CONFIG` until current R19/Unit-3 P&ID/isometric closure.
+
+**Controlled sources:** SRC-0407 (`APP-GW-GEE-3449`); SRC-0414 Sec.6.6.1.2.4.
+
+## CHG-006 — PXS valve leak-test subsystem design-pressure change
+
+**Change:** AP1000 DCP `APP-GW-GEE-4560`, **PXS Valve Leak Test Subsystem Design Pressure Increase and Related Changes**, was approved after the earlier panel-removal change.
+
+**Disposition:** `CURRENT_BASELINE` design-change history. Do not retain preliminary leak-test-line pressure classes/material selections merely because they occur in older public drawings. Exact revised design pressure, affected line classes, component ratings and support-analysis consequences must be resolved from the DCP/current R19 construction documents before geometry/specification freeze.
+
+**Controlled source:** SRC-0407.
+
 ## Rule for future changes
 
 Every newly discovered public design change that alters component type, quantity, tag, location, routing, material, actuation, support, electrical interface, or installed/removed status gets a ledger entry before the newer detail is allowed to overwrite an existing canonical object. The canonical database should reference the current feature; the historical feature remains queryable here or in a dedicated system-level configuration register.
