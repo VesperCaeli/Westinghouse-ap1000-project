@@ -86,6 +86,24 @@ A historical feature remains useful evidence, but it must not be instantiated as
 
 **Controlled source:** SRC-0407.
 
+## CHG-007 — CMT discharge AOV actuator-family reconciliation
+
+**Historical vendor evidence:** A 2013 NRC Part 21 event notification ties generic AP1000 tags `APP-PXS-PL-V014A/B` and `APP-PXS-PL-V015A/B` to Fisher Type 657NS2 Size 80 actuators and lists individual Fisher serial numbers.
+
+**Later/current qualification evidence:** The later AP1000 PV20 equipment-qualification package for the Fisher Controls SS-264 valve assemblies includes `APP-PV20-VPR-002`, a qualification report for Bettis NCBB, NCBA300 and NG actuator families. Unit-3 inspection records identify the installed CMT discharge AOVs as bounded by the PV20 SS-264 qualification package and provide valve-specific diagnostic work orders, but the currently available public text does not yet identify which Bettis actuator model/size/serial is installed on each Unit-3 valve.
+
+**Disposition:** `UNRESOLVED_CONFIG` for the final actuator model/size on Unit-3 `V014A/B` and `V015A/B`. The 657NS2 serials are `HISTORY_ONLY` vendor evidence and must not be copied into the Unit-3 as-built model. The PV20/Bettis qualification family is the current reconciliation lead, not a tag-specific final assignment.
+
+**Controlled sources:** SRC-0428; SRC-0429; SRC-0425; SRC-0430.
+
+## CHG-008 — PRHR V108 valve-type wording discrepancy
+
+**Conflicting public wording:** A Unit-3 NRC construction-inspection narrative for `PXS-PL-V108B` calls the installed component an air-operated **ball valve** while documenting its installation in `PXS-L104B`. Separate controlled AP1000 evidence identifies `V108A/B` as the PRHR HX control valves and associates them with the Fisher HPNS / PV14 control-valve qualification family; Revision-19 valve tables characterize the PRHR controls as air-operated control/globe valves.
+
+**Disposition:** Treat the isolated `ball valve` wording as a configuration/documentation discrepancy, not a geometry basis. Current modeling remains tied to the PV14 Fisher HPNS control-valve family, with exact internal geometry held `UNRESOLVED_CONFIG` until `SV3-PV14-V2-104001` / `APP-PV14-Z0D-104` or equivalent controlling assembly/datasheet content is recovered. The Unit-3 `V108B` serial/body/bonnet material traceability remains valid independently of the wording discrepancy.
+
+**Controlled sources:** SRC-0413; SRC-0425; SRC-0429; SRC-0402.
+
 ## Rule for future changes
 
 Every newly discovered public design change that alters component type, quantity, tag, location, routing, material, actuation, support, electrical interface, or installed/removed status gets a ledger entry before the newer detail is allowed to overwrite an existing canonical object. The canonical database should reference the current feature; the historical feature remains queryable here or in a dedicated system-level configuration register.
