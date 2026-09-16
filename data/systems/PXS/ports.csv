@@ -1,0 +1,72 @@
+port_id,object_id,port_name,port_class,service_or_medium,nominal_size,direction,evidence_state,source_ids,source_locator,status,notes
+PXS-CMT-A-INJ-OUT,PXS-CMT-A,CMT A lower-head injection outlet,process_outlet,borated reactor coolant,,out,VERIFIED_PUBLIC,SRC-0011;SRC-0401,NUREG-1793 Ch.5 Sec.5.4.13 / Ch.6 Sec.6.3.2.1,ACTIVE,
+PXS-CMT-A-BAL-IN,PXS-CMT-A,CMT A cold-leg pressure-balance inlet,process_inlet,reactor coolant/steam,,in,VERIFIED_PUBLIC,SRC-0011;SRC-0401,NUREG-1793 Ch.5 Sec.5.4.13 / Ch.6 Sec.6.3.2.1,BOUNDARY,Open boundary to associated RCS cold-leg pressure-balance connection
+PXS-CMT-A-CVS-FILL,PXS-CMT-A,CMT A CVS fill connection,process_inlet,borated water,,in,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.4.13.1,BOUNDARY,Owned downstream by CVS work package
+PXS-CMT-A-VENT,PXS-CMT-A,CMT A high-point vent outlet,vent,reactor coolant/noncondensable gas,,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.4.13.1,BOUNDARY,Two manual valves to reactor coolant drain tank to be canonicalized with WLS boundary
+PXS-CMT-A-SAMPLE-U,PXS-CMT-A,CMT A upper sample connection,sample,reactor coolant,,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.4.13.1,BOUNDARY,Sampling-system destination pending
+PXS-CMT-A-SAMPLE-L,PXS-CMT-A,CMT A lower sample connection,sample,reactor coolant,,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.4.13.1,BOUNDARY,Sampling-system destination pending
+PXS-CMT-B-INJ-OUT,PXS-CMT-B,CMT B lower-head injection outlet,process_outlet,borated reactor coolant,,out,VERIFIED_PUBLIC,SRC-0011;SRC-0401,NUREG-1793 Ch.5 Sec.5.4.13 / Ch.6 Sec.6.3.2.1,ACTIVE,
+PXS-CMT-B-BAL-IN,PXS-CMT-B,CMT B cold-leg pressure-balance inlet,process_inlet,reactor coolant/steam,,in,VERIFIED_PUBLIC,SRC-0011;SRC-0401,NUREG-1793 Ch.5 Sec.5.4.13 / Ch.6 Sec.6.3.2.1,BOUNDARY,Open boundary to associated RCS cold-leg pressure-balance connection
+PXS-CMT-B-CVS-FILL,PXS-CMT-B,CMT B CVS fill connection,process_inlet,borated water,,in,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.4.13.1,BOUNDARY,Owned downstream by CVS work package
+PXS-CMT-B-VENT,PXS-CMT-B,CMT B high-point vent outlet,vent,reactor coolant/noncondensable gas,,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.4.13.1,BOUNDARY,Two manual valves to reactor coolant drain tank to be canonicalized with WLS boundary
+PXS-CMT-B-SAMPLE-U,PXS-CMT-B,CMT B upper sample connection,sample,reactor coolant,,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.4.13.1,BOUNDARY,Sampling-system destination pending
+PXS-CMT-B-SAMPLE-L,PXS-CMT-B,CMT B lower sample connection,sample,reactor coolant,,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.4.13.1,BOUNDARY,Sampling-system destination pending
+PXS-CMT-INJ-A-IN,PXS-CMT-INJ-A,CMT injection path A inlet,pipe_end,borated reactor coolant,,in,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.1,ACTIVE,
+PXS-CMT-INJ-A-OUT,PXS-CMT-INJ-A,CMT injection path A outlet,pipe_end,borated reactor coolant,,out,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.1,ACTIVE,
+PXS-CMT-INJ-B-IN,PXS-CMT-INJ-B,CMT injection path B inlet,pipe_end,borated reactor coolant,,in,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.1,ACTIVE,
+PXS-CMT-INJ-B-OUT,PXS-CMT-INJ-B,CMT injection path B outlet,pipe_end,borated reactor coolant,,out,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.1,ACTIVE,
+PXS-ACC-A-OUT,PXS-ACC-A,Accumulator A injection outlet,process_outlet,borated water,,out,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.2,ACTIVE,
+PXS-ACC-A-GAS-VENT,PXS-ACC-A,Accumulator A remote nitrogen vent,vent,nitrogen,,out,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.2,BOUNDARY,Gas handling/vent termination to be resolved
+PXS-ACC-A-GAS-RELIEF,PXS-ACC-A,Accumulator A gas relief outlet,relief,nitrogen,,out,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.2,BOUNDARY,Relief setpoint/device details remain in pressure-boundary register
+PXS-ACC-B-OUT,PXS-ACC-B,Accumulator B injection outlet,process_outlet,borated water,,out,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.2,ACTIVE,
+PXS-ACC-B-GAS-VENT,PXS-ACC-B,Accumulator B remote nitrogen vent,vent,nitrogen,,out,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.2,BOUNDARY,Gas handling/vent termination to be resolved
+PXS-ACC-B-GAS-RELIEF,PXS-ACC-B,Accumulator B gas relief outlet,relief,nitrogen,,out,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.2,BOUNDARY,Relief setpoint/device details remain in pressure-boundary register
+PXS-ACC-INJ-A-IN,PXS-ACC-INJ-A,Accumulator injection path A inlet,pipe_end,borated water,,in,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.2,ACTIVE,
+PXS-ACC-INJ-A-OUT,PXS-ACC-INJ-A,Accumulator injection path A outlet,pipe_end,borated water,,out,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.2,ACTIVE,
+PXS-ACC-INJ-B-IN,PXS-ACC-INJ-B,Accumulator injection path B inlet,pipe_end,borated water,,in,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.2,ACTIVE,
+PXS-ACC-INJ-B-OUT,PXS-ACC-INJ-B,Accumulator injection path B outlet,pipe_end,borated water,,out,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.2,ACTIVE,
+PXS-IRWST-INJ-A-SRC,PXS-IRWST,IRWST injection source A,process_outlet,borated water,,out,VERIFIED_PUBLIC,SRC-0401;SRC-0402,NUREG-1793 Ch.6 Sec.6.3.2.3 / DCD Fig.6.3-1,ACTIVE,
+PXS-IRWST-INJ-B-SRC,PXS-IRWST,IRWST injection source B,process_outlet,borated water,,out,VERIFIED_PUBLIC,SRC-0401;SRC-0402,NUREG-1793 Ch.6 Sec.6.3.2.3 / DCD Fig.6.3-1,ACTIVE,
+PXS-IRWST-ADS-A-IN,PXS-IRWST,IRWST ADS sparger A discharge interface,process_inlet,steam/reactor coolant,,in,VERIFIED_PUBLIC,SRC-0401;SRC-0404,NUREG-1793 Ch.6 / NRC sparger ITAAC inspection,ACTIVE,
+PXS-IRWST-ADS-B-IN,PXS-IRWST,IRWST ADS sparger B discharge interface,process_inlet,steam/reactor coolant,,in,VERIFIED_PUBLIC,SRC-0401;SRC-0404,NUREG-1793 Ch.6 / NRC sparger ITAAC inspection,ACTIVE,
+PXS-IRWST-PRHR-HT,PXS-IRWST,IRWST PRHR heat-transfer interface,heat_transfer,IRWST water/steam,,bidirectional,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3,BOUNDARY,Thermal rather than pipe connection; PRHR thermal model closes this boundary
+PXS-IRWST-INJ-A-IN,PXS-IRWST-INJ-A,IRWST injection path A inlet,pipe_end,borated water,,in,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.3,ACTIVE,
+PXS-IRWST-INJ-A-RECIRC,PXS-IRWST-INJ-A,IRWST injection path A recirculation tie-in,process_inlet,post-LOCA borated containment water,,in,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.3,ACTIVE,
+PXS-IRWST-INJ-A-OUT,PXS-IRWST-INJ-A,IRWST injection path A outlet,pipe_end,borated water,,out,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.3,ACTIVE,
+PXS-IRWST-INJ-B-IN,PXS-IRWST-INJ-B,IRWST injection path B inlet,pipe_end,borated water,,in,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.3,ACTIVE,
+PXS-IRWST-INJ-B-RECIRC,PXS-IRWST-INJ-B,IRWST injection path B recirculation tie-in,process_inlet,post-LOCA borated containment water,,in,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.3,ACTIVE,
+PXS-IRWST-INJ-B-OUT,PXS-IRWST-INJ-B,IRWST injection path B outlet,pipe_end,borated water,,out,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.3,ACTIVE,
+PXS-DVI-A-CMT,PXS-DVI-A,DVI A CMT inlet,process_inlet,borated reactor coolant,,in,VERIFIED_PUBLIC,SRC-0401;SRC-0402,NUREG-1793 Ch.6 / DCD Fig.6.3-1,ACTIVE,
+PXS-DVI-A-ACC,PXS-DVI-A,DVI A accumulator inlet,process_inlet,borated water,,in,VERIFIED_PUBLIC,SRC-0401;SRC-0402,NUREG-1793 Ch.6 / DCD Fig.6.3-1,ACTIVE,
+PXS-DVI-A-IRWST,PXS-DVI-A,DVI A IRWST/recirculation inlet,process_inlet,borated water,,in,VERIFIED_PUBLIC,SRC-0401;SRC-0402,NUREG-1793 Ch.6 / DCD Fig.6.3-1,ACTIVE,
+PXS-DVI-A-RNS,PXS-DVI-A,DVI A RNS interface,process_inlet,RNS injection/return service,,in,VERIFIED_PUBLIC,SRC-0401;SRC-0402,NUREG-1793 Ch.6 / DCD Fig.6.3-1,BOUNDARY,RNS work package must close this interface
+PXS-DVI-A-RV,PXS-DVI-A,DVI A reactor-vessel outlet,process_outlet,borated reactor coolant,,out,VERIFIED_PUBLIC,SRC-0401;SRC-0402,NUREG-1793 Ch.6 / DCD Fig.6.3-1,ACTIVE,
+PXS-DVI-B-CMT,PXS-DVI-B,DVI B CMT inlet,process_inlet,borated reactor coolant,,in,VERIFIED_PUBLIC,SRC-0401;SRC-0402,NUREG-1793 Ch.6 / DCD Fig.6.3-1,ACTIVE,
+PXS-DVI-B-ACC,PXS-DVI-B,DVI B accumulator inlet,process_inlet,borated water,,in,VERIFIED_PUBLIC,SRC-0401;SRC-0402,NUREG-1793 Ch.6 / DCD Fig.6.3-1,ACTIVE,
+PXS-DVI-B-IRWST,PXS-DVI-B,DVI B IRWST/recirculation inlet,process_inlet,borated water,,in,VERIFIED_PUBLIC,SRC-0401;SRC-0402,NUREG-1793 Ch.6 / DCD Fig.6.3-1,ACTIVE,
+PXS-DVI-B-RNS,PXS-DVI-B,DVI B RNS interface,process_inlet,RNS injection/return service,,in,VERIFIED_PUBLIC,SRC-0401;SRC-0402,NUREG-1793 Ch.6 / DCD Fig.6.3-1,BOUNDARY,RNS work package must close this interface
+PXS-DVI-B-RV,PXS-DVI-B,DVI B reactor-vessel outlet,process_outlet,borated reactor coolant,,out,VERIFIED_PUBLIC,SRC-0401;SRC-0402,NUREG-1793 Ch.6 / DCD Fig.6.3-1,ACTIVE,
+PXS-RV-DVI-A-IN,PXS-RV-DVI-A-BND,Reactor vessel DVI A boundary inlet,process_inlet,borated reactor coolant,,in,VERIFIED_PUBLIC,SRC-0401;SRC-0402,NUREG-1793 Ch.6 / DCD Fig.6.3-1,ACTIVE,
+PXS-RV-DVI-B-IN,PXS-RV-DVI-B-BND,Reactor vessel DVI B boundary inlet,process_inlet,borated reactor coolant,,in,VERIFIED_PUBLIC,SRC-0401;SRC-0402,NUREG-1793 Ch.6 / DCD Fig.6.3-1,ACTIVE,
+PXS-PRHR-HOT-BND-OUT,PXS-PRHR-HOT-BND,RCS hot-leg PRHR supply boundary outlet,process_outlet,reactor coolant,,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.4.14,ACTIVE,
+PXS-PRHR-INLET-IN,PXS-PRHR-INLET,PRHR inlet path upstream end,pipe_end,reactor coolant,,in,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.4.14,ACTIVE,
+PXS-PRHR-INLET-OUT,PXS-PRHR-INLET,PRHR inlet path downstream end,pipe_end,reactor coolant,,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.4.14,ACTIVE,
+PXS-PRHR-HX-IN,PXS-PRHR,PRHR HX primary inlet,process_inlet,reactor coolant,,in,VERIFIED_PUBLIC,SRC-0011;SRC-0406,NUREG-1793 Ch.5 Sec.5.4.14 / NRC fabrication inspection,ACTIVE,
+PXS-PRHR-HX-OUT,PXS-PRHR,PRHR HX primary outlet,process_outlet,reactor coolant,,out,VERIFIED_PUBLIC,SRC-0011;SRC-0406,NUREG-1793 Ch.5 Sec.5.4.14 / NRC fabrication inspection,ACTIVE,
+PXS-PRHR-RETURN-IN,PXS-PRHR-RETURN,PRHR return path upstream end,pipe_end,reactor coolant,,in,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.4.14,ACTIVE,
+PXS-PRHR-RETURN-OUT,PXS-PRHR-RETURN,PRHR return path downstream end,pipe_end,reactor coolant,,out,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.4.14,ACTIVE,
+PXS-PRHR-RET-BND-IN,PXS-PRHR-RET-BND,RCS PRHR return boundary inlet,process_inlet,reactor coolant,,in,VERIFIED_PUBLIC,SRC-0011,NUREG-1793 Ch.5 Sec.5.4.14,ACTIVE,
+ADS-COMMON-A-IN,ADS-COMMON-A,ADS common discharge A upstream staged-flow boundary,process_inlet,steam/reactor coolant,,in,VERIFIED_PUBLIC,SRC-0007;SRC-0401,AP1000 Tech Spec Bases / NUREG-1793 Ch.6,BOUNDARY,Stages 1-3 valve branches in ads_topology.csv will be promoted in next strict-graph increment
+ADS-COMMON-A-OUT,ADS-COMMON-A,ADS common discharge A outlet,pipe_end,steam/reactor coolant,,out,VERIFIED_PUBLIC,SRC-0007;SRC-0401,AP1000 Tech Spec Bases / NUREG-1793 Ch.6,ACTIVE,
+ADS-COMMON-B-IN,ADS-COMMON-B,ADS common discharge B upstream staged-flow boundary,process_inlet,steam/reactor coolant,,in,VERIFIED_PUBLIC,SRC-0007;SRC-0401,AP1000 Tech Spec Bases / NUREG-1793 Ch.6,BOUNDARY,Stages 1-3 valve branches in ads_topology.csv will be promoted in next strict-graph increment
+ADS-COMMON-B-OUT,ADS-COMMON-B,ADS common discharge B outlet,pipe_end,steam/reactor coolant,,out,VERIFIED_PUBLIC,SRC-0007;SRC-0401,AP1000 Tech Spec Bases / NUREG-1793 Ch.6,ACTIVE,
+PXS-SPARGER-A-IN,PXS-SPARGER-A,ADS sparger A inlet,process_inlet,steam/reactor coolant,,in,VERIFIED_PUBLIC,SRC-0404,NRC ITAAC inspection ML17044A539,ACTIVE,
+PXS-SPARGER-A-OUT,PXS-SPARGER-A,ADS sparger A distributed discharge,process_outlet,steam/reactor coolant,,out,VERIFIED_PUBLIC,SRC-0404,NRC ITAAC inspection ML17044A539,ACTIVE,Represents aggregate discharge of 1400 holes; individual hole ports deferred to geometry/BOM layer
+PXS-SPARGER-B-IN,PXS-SPARGER-B,ADS sparger B inlet,process_inlet,steam/reactor coolant,,in,VERIFIED_PUBLIC,SRC-0404,NRC ITAAC inspection ML17044A539,ACTIVE,
+PXS-SPARGER-B-OUT,PXS-SPARGER-B,ADS sparger B distributed discharge,process_outlet,steam/reactor coolant,,out,VERIFIED_PUBLIC,SRC-0404,NRC ITAAC inspection ML17044A539,ACTIVE,Represents aggregate discharge of 1400 holes; individual hole ports deferred to geometry/BOM layer
+PXS-SUMP-OUT-A,PXS-SUMP,Containment sump recirculation source A,process_outlet,post-LOCA borated containment water,,out,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.3,ACTIVE,
+PXS-SUMP-OUT-B,PXS-SUMP,Containment sump recirculation source B,process_outlet,post-LOCA borated containment water,,out,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.3,ACTIVE,
+PXS-RECIRC-A-IN,PXS-RECIRC-A,Recirculation path A inlet,pipe_end,post-LOCA borated containment water,,in,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.3,ACTIVE,
+PXS-RECIRC-A-OUT,PXS-RECIRC-A,Recirculation path A outlet,pipe_end,post-LOCA borated containment water,,out,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.3,ACTIVE,
+PXS-RECIRC-B-IN,PXS-RECIRC-B,Recirculation path B inlet,pipe_end,post-LOCA borated containment water,,in,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.3,ACTIVE,
+PXS-RECIRC-B-OUT,PXS-RECIRC-B,Recirculation path B outlet,pipe_end,post-LOCA borated containment water,,out,VERIFIED_PUBLIC,SRC-0401,NUREG-1793 Ch.6 Sec.6.3.2.3,ACTIVE,

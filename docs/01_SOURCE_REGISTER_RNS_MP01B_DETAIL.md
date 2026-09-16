@@ -1,0 +1,7 @@
+# Public Source Register Supplement — Unit 3 RNS MP-01B Detail
+
+This supplement shares the global controlled `SRC-*` namespace with the other `01_SOURCE_REGISTER*.md` files.
+
+| Source ID | Authority | Configuration | Document | Locator / accession | Use |
+|---|---|---|---|---|---|
+| SRC-0713 | A | VOGTLE-3-RNS-PUMP-B-OUTLINE-AND-RECEIPT | NRC Vogtle Units 3/4 periodic QA inspection, RNS pump receipt/design-document review | ADAMS `ML14303A481`, NRC Inspection Report 05200025/2014014 and 05200026/2014014, reviewed records for MP08 | NRC reviewed `APP-MP08-V1-002` Rev.0, **RNS Centrifugal Normal Residual Heat Removal Pump B Outline Drawing**, together with `APP-MP08-Z0-001` Rev.7 and receipt-inspection records including `Q445-014-14-0001` / `Q445-014-14-0002` for the RNS pump procurement population. This is a direct controlled retrieval route to the Pump-B vendor outline/envelope drawing and receipt/manufacturing record chain. Recover the actual V1-002 drawing to obtain nozzle locations/orientations, pump/coupling/baseplate envelope, mounting interfaces and vendor dimensional references, then reconcile against the final MP-01B EQRR and post-disassembly reassembly/alignment/turnover records. The public inspection report does **not** print those dimensions, does not establish the final installed MP-01B serial from the generic `PUMPXX` receipt labels, and does not prove the as-received configuration remained unchanged after the later documented MP-01B disassembly. |
