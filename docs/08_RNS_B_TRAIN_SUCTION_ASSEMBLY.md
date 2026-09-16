@@ -33,11 +33,14 @@ inside-containment parallel RCS-pressure-boundary suction paths
                                            |
                                            +--> V020  1-in LTOP relief
                                            |      lower-capacity / lower-setpoint branch
+                                           |      outlet -> WLS containment sump
+                                           |      exact outlet route OPEN
                                            |
                                            +--> V021  3-in LTOP relief
                                            |      larger-capacity branch; PV16 Z0D-105 route
+                                           |      receiving boundary -> WLS containment sump
+                                           |      exact outlet route/recombination OPEN
                                            |
-                                           |  exact post-LAR takeoffs/outlet routing OPEN
                                            v
                                   SV3-RNS-PY-C01 / P19
                                   RCS to RHR Pump Out
@@ -74,7 +77,7 @@ inside-containment parallel RCS-pressure-boundary suction paths
                                                 RNS-MP-01B
 ```
 
-The diagram does **not** assert a locally exact `L004B -> L005B -> L006B -> L007B -> L009B` spool sequence. The generic Westinghouse construction-verification tables establish the downstream line family and the `L006B` convergence relationships; direct Unit-3 construction evidence independently fixes `L009B` at the MP-01B suction nozzle. The local line-number transitions around V002B, the common-header line number through P19, the exact V022 placement, V020/V021 takeoffs/outlets, and exact V005B placement still require current Unit-3 P&ID/isometric/line-designation records.
+The diagram does **not** assert a locally exact `L004B -> L005B -> L006B -> L007B -> L009B` spool sequence. The generic Westinghouse construction-verification tables establish the downstream line family and the `L006B` convergence relationships; direct Unit-3 construction evidence independently fixes `L009B` at the MP-01B suction nozzle. The local line-number transitions around V002B, the common-header line number through P19, the exact V022 placement, V020/V021 takeoffs/outlet routing, and exact V005B placement still require current Unit-3 P&ID/isometric/line-designation records.
 
 ## P19 common suction containment penetration
 
@@ -125,7 +128,7 @@ The original `APP-RNS-M3C-002` single-relief basis exposed 850-gpm minimum capac
 
 Unit-3 ITAAC Index 372 (`ML18120A270`) and Index 373 (`ML18117A424`) closed the LTOP capacity and set-pressure criteria after Amendment 104. Those final completion packages are therefore the preferred route to actual installed performance. Public status indexes confirm the completion records but do not expose the underlying measured V020/V021 values.
 
-The final outlet routing also remains open. Pre-amendment Chapter-5 text conflicts between an IRWST destination and a containment-sump destination, and Amendment 104 added additional relief piping. A post-amendment Unit-3 P&ID/isometric must establish whether V020/V021 outlets remain separate or combine and where they terminate.
+The **final receiving boundary is now resolved as the liquid radwaste system (WLS) containment sump**. Plant-specific LAR-17-022 text explicitly states that V020 *also* discharges to the WLS containment sump (`SRC-0741`). V020's destination is therefore direct, and the comparative “also” wording strongly corroborates the same final receiving boundary for the retained V021 relief path. This later Vogtle-specific evidence supersedes the earlier generic/initial-FSER IRWST-versus-containment-sump ambiguity for final configuration. What remains open is the physical outlet routing: individual line numbers/sizes/classes, whether V020/V021 outlets combine, fittings, supports/restraints, drain/test details, and the exact WLS sump discharge interface.
 
 ## Outside-containment common suction header
 
@@ -176,7 +179,7 @@ The highest-value next records are now:
 1. `LDCR-2017-114` plus the post-Amendment-104 revision of `APP-RNS-M3C-002`, to close V020/V021 design setpoints, capacities and current LTOP analytical assumptions.
 2. Unit-3 ITAAC ICNs `ML18120A270` / `ML18117A424` and their referenced NV-1/code-data/test records, to recover final installed relief capacity and set-pressure evidence.
 3. The exact **V020 datasheet/vendor/QME-1/code-data package**. No tag-specific public data-sheet bridge has yet been recovered; V021's PV16 Z0D-105 must not be reused.
-4. Post-LAR `SV3-RNS-M6-003` / current RNS P&ID plus affected isometrics, to place V020/V021 inlet and outlet branches and resolve their final destination(s).
+4. Post-LAR `SV3-RNS-M6-003` / current RNS P&ID plus affected isometrics, to place V020/V021 inlet branches and close their exact outlet routing/recombination and WLS containment-sump interface.
 5. `SV3-MV50-V1-016` + `SV3-MV50-V1-015` + `SV3-RNS-MLK-881065` + `SV3-ML10-V6-003`, specifically querying P19, to close its azimuth/elevation, hardware dimensions and weld locations.
 6. `SV3-RNS-MLW-860363`, to close P19 material traceability, installation details, NDE bridges and final turnover.
 7. Current Unit-3 RNS P&ID / `SV3-RNS-M6K-FA201` / `SV3-RNS-M6X-004`, to identify the V002A/B branch-combining point, common-header line number, V022 physical placement and downstream pump split.
