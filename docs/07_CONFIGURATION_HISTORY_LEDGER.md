@@ -86,23 +86,35 @@ A historical feature remains useful evidence, but it must not be instantiated as
 
 **Controlled source:** SRC-0407.
 
-## CHG-007 — CMT discharge AOV actuator-family reconciliation
+## CHG-007 — CMT discharge AOV vendor/actuator reconciliation
 
-**Historical vendor evidence:** A 2013 NRC Part 21 event notification ties generic AP1000 tags `APP-PXS-PL-V014A/B` and `APP-PXS-PL-V015A/B` to Fisher Type 657NS2 Size 80 actuators and lists individual Fisher serial numbers.
+**Public design evidence:** The AP1000 public PXS description identifies `V014A/B` and `V015A/B` as four 8-inch normally-closed, fail-open, air-operated globe valves in the CMT discharge paths. Unit-3 records independently confirm the four installed AOV tags and provide valve-specific dynamic-diagnostic/test work packages.
 
-**Later/current qualification evidence:** The later AP1000 PV20 equipment-qualification package for the Fisher Controls SS-264 valve assemblies includes `APP-PV20-VPR-002`, a qualification report for Bettis NCBB, NCBA300 and NG actuator families. Unit-3 inspection records identify the installed CMT discharge AOVs as bounded by the PV20 SS-264 qualification package and provide valve-specific diagnostic work orders, but the currently available public text does not yet identify which Bettis actuator model/size/serial is installed on each Unit-3 valve.
+**Vendor evidence:** A 2013 NRC Part 21 event notification ties generic AP1000 tags `APP-PXS-PL-V014A/B` and `APP-PXS-PL-V015A/B` to Fisher Type 657NS2 Size 80 actuators, with Fisher serial numbers 19073487 through 19073490 respectively.
 
-**Disposition:** `UNRESOLVED_CONFIG` for the final actuator model/size on Unit-3 `V014A/B` and `V015A/B`. The 657NS2 serials are `HISTORY_ONLY` vendor evidence and must not be copied into the Unit-3 as-built model. The PV20/Bettis qualification family is the current reconciliation lead, not a tag-specific final assignment.
+**Project source-association correction:** Earlier project records incorrectly associated these CMT AOVs with the AP1000 PV20 Fisher SS-264/Bettis qualification family. Subsequent cross-checking shows PV20 is the PRHR discharge/control rotary-ball-valve family used by `V108A/B`, not the CMT V014/V015 family. This was a project evidence-mapping error, not an AP1000 design evolution.
 
-**Controlled sources:** SRC-0428; SRC-0429; SRC-0425; SRC-0430.
+**Disposition:**
+- V014A/B and V015A/B 8-inch NC/FO air-operated globe function/body pattern: `CURRENT_BASELINE`.
+- 2013 Fisher 657NS2 Size 80 tag/serial records: `HISTORY_ONLY` / vendor evidence until plant-specific Unit-3 installed records establish whether those exact actuators and serials were installed at Vogtle Unit 3.
+- Exact current Unit-3 valve assembly/datasheet, actuator manufacturer/model/size/serial, solenoid arrangement and pneumatic accessory set: `UNRESOLVED_CONFIG`.
+- PV20/SS-264/Bettis assignment to CMT V014/V015: rejected project mapping; do not use.
 
-## CHG-008 — PRHR V108 valve-type wording discrepancy
+**Controlled sources:** SRC-0414; SRC-0428; SRC-0425; SRC-0430.
 
-**Conflicting public wording:** A Unit-3 NRC construction-inspection narrative for `PXS-PL-V108B` calls the installed component an air-operated **ball valve** while documenting its installation in `PXS-L104B`. Separate controlled AP1000 evidence identifies `V108A/B` as the PRHR HX control valves and associates them with the Fisher HPNS / PV14 control-valve qualification family; Revision-19 valve tables characterize the PRHR controls as air-operated control/globe valves.
+## CHG-008 — PRHR V108 control-valve family correction
 
-**Disposition:** Treat the isolated `ball valve` wording as a configuration/documentation discrepancy, not a geometry basis. Current modeling remains tied to the PV14 Fisher HPNS control-valve family, with exact internal geometry held `UNRESOLVED_CONFIG` until `SV3-PV14-V2-104001` / `APP-PV14-Z0D-104` or equivalent controlling assembly/datasheet content is recovered. The Unit-3 `V108B` serial/body/bonnet material traceability remains valid independently of the wording discrepancy.
+**Direct Unit-3 evidence:** NRC construction inspection for `PXS-PL-V108B` explicitly identifies the installed component as an air-operated **ball valve** on PRHR return line `PXS-L104B`. Separate PRHR fabrication/inspection records identify `APP-PV20-VMM-001`, *Installation, Operation & Maintenance Manual for AP1000 PV20 Piston Operated Rotary Ball Valves*, and `APP-PV20-Z0-001`, the PRHR discharge-valve specification, in the V108A/B design trail. The PV20 qualification index identifies Fisher Controls SS-264 valve assemblies and Bettis actuator qualification.
 
-**Controlled sources:** SRC-0413; SRC-0425; SRC-0429; SRC-0402.
+**Project source-association correction:** Earlier project records mapped V108A/B to the PV14 Fisher HPNS/globe family and treated the direct Unit-3 `ball valve` wording as a discrepancy. That interpretation was incorrect. The direct plant-specific installation record and PV20 PRHR vendor-document trail resolve V108B as a ball valve and establish PV20 as the correct V108 family. PV14 remains a separate AP1000 air-operated-globe/control-valve commodity family used elsewhere in PXS, including the confirmed V042 commodity association.
+
+**Disposition:**
+- Unit-3 V108B air-operated ball-valve type and PV20 family: `PLANT_SPECIFIC_CURRENT`.
+- V108A/B common PV20 Fisher SS-264 piston-operated rotary-ball-valve family: `CURRENT_BASELINE` for current modeling, while tag-specific installed actuator serials/accessories remain unresolved.
+- Prior V108=PV14/HPNS/globe mapping: rejected project mapping; do not use for geometry.
+- Exact V108A Unit-3 valve/actuator serial and detailed internals: `UNRESOLVED_CONFIG` pending tag-specific assembly/maintenance evidence.
+
+**Controlled sources:** SRC-0413; SRC-0406; SRC-0429; SRC-0422; SRC-0425.
 
 ## Rule for future changes
 
