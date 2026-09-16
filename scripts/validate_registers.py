@@ -17,7 +17,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MASTER = ROOT / "data" / "master"
 SYSTEMS = ROOT / "data" / "systems"
-SOURCE_REGISTER = ROOT / "docs" / "01_SOURCE_REGISTER.md"
+SOURCE_REGISTER_DIR = ROOT / "docs"
+SOURCE_REGISTER_GLOB = "01_SOURCE_REGISTER*.md"
 
 ALLOWED_EVIDENCE = {
     "VERIFIED_PUBLIC",
@@ -86,11 +87,35 @@ def nonempty(rows: list[dict[str, str]], field: str) -> set[str]:
     return {r.get(field, "").strip() for r in rows if r.get(field, "").strip()}
 
 
-def parse_source_ids() -> set[str]:
-    if not SOURCE_REGISTER.exists():
+def parse_source_ids(errors: list[str]) -> set[str]:
+    """Read the controlled source namespace from the base register and supplements.
+
+    Supplements must be named docs/01_SOURCE_REGISTER_*.md. All files share one
+    SRC-* namespace; duplicate IDs across files are hard errors.
+    """
+    files = sorted(SOURCE_REGISTER_DIR.glob(SOURCE_REGISTER_GLOB))
+    if not files:
+        errors.append("docs/01_SOURCE_REGISTER*.md: no controlled source-register files found")
         return set()
-    text = SOURCE_REGISTER.read_text(encoding="utf-8")
-    return set(re.findall(r"\|\s*(SRC-\d+)\s*\|", text))
+
+    occurrences: list[tuple[str, Path]] = []
+    for path in files:
+        text = path.read_text(encoding="utf-8")
+        for sid in re.findall(r"\|\s*(SRC-\d+)\s*\|", text):
+            occurrences.append((sid, path))
+
+    counts = Counter(sid for sid, _ in occurrences)
+    for sid, count in sorted(counts.items()):
+        if count > 1:
+            locations = sorted(
+                {str(path.relative_to(ROOT)) for candidate, path in occurrences if candidate == sid}
+            )
+            errors.append(
+                f"source-register namespace: duplicate {sid} appears {count} times in "
+                + ", ".join(locations)
+            )
+
+    return set(counts)
 
 
 def split_source_ids(value: str) -> list[str]:
@@ -310,9 +335,9 @@ def main() -> int:
     errors: list[str] = []
     warnings: list[str] = []
 
-    source_ids = parse_source_ids()
+    source_ids = parse_source_ids(errors)
     if not source_ids:
-        errors.append("docs/01_SOURCE_REGISTER.md: no controlled SRC-* identifiers found")
+        errors.append("docs/01_SOURCE_REGISTER*.md: no controlled SRC-* identifiers found")
 
     master_object_ids, master_system_ids = validate_master(source_ids, errors, warnings)
     table_count, row_count = validate_system_tables(
