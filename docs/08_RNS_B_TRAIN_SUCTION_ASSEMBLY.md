@@ -8,6 +8,7 @@ The governing machine-readable registers are:
 
 - `data/systems/PXS/unit3_rns_b_train_suction_assembly.csv`
 - `data/systems/PXS/unit3_rns_b_train_suction_closure_gates.csv`
+- `data/systems/PXS/unit3_rns_b_train_containment_ltop_retrieval.csv`
 - the existing V002B electromechanical, EQRR, diagnostic, design-model and isometric recovery registers.
 
 ## Evidence-controlled topology
@@ -27,8 +28,8 @@ RNS-PL-V001B  inner hot-leg suction MOV
   |  exact Unit-3 pressure-boundary spool / containment-transition geometry OPEN
   v
 RNS-PL-V002B  outer hot-leg suction / containment-isolation MOV
-  |
-  |  exact V002B inlet/outlet line numbers and local spool geometry OPEN
+  |  + design-level spatial constraint: containment-isolation member closest to suction penetration
+  |  + Unit-3 penetration number / shell coordinates / exact valve-to-shell distance OPEN
   v
 RNS downstream suction family
   L004B / L005B / L006B / L007B / L009B
@@ -70,19 +71,22 @@ The diagram above **does not** assert a locally exact `L004B -> L005B -> L006B -
 Two different relief functions are retained as separate graph branches.
 
 1. **RCS pressure-boundary thermal relief:** `RNS-PL-V003B` is the B-side thermal-relief check valve and is directly present in the Unit-3 RNS EQ population; `RNS-PL-V004B` is the separately identified thermal-relief isolation valve. The exact branch takeoff, local line number, restrictor/orifice hardware, sequence/spacing and downstream routing remain to be recovered (`SRC-0701`, `SRC-0704`).
-2. **Low-temperature overpressure protection:** `RNS-PL-V021` is the Unit-3 RNS hot-leg suction pressure relief valve with a direct PV16 qualification route. The AP1000 certification basis establishes the LTOP role and containment sump/atmosphere final-discharge boundary. The exact Unit-3 takeoff, relief-line identity, set pressure, outlet routing and support geometry remain open (`SRC-0711`, `SRC-0712`).
+2. **Low-temperature overpressure protection:** `RNS-PL-V021` is the Unit-3 RNS hot-leg suction pressure relief valve and is directly bridged to PV16 Datasheet 105 / its QME-1 qualification family (`SRC-0711`, `SRC-0716`). AP1000 LTOP design evidence establishes a minimum required relief capacity of 850 gpm, 500-psig nominal set pressure and 550-psig full-open pressure at 10% accumulation (`SRC-0717`). Those are design requirements, not the final Unit-3 production-test results. NUREG-1793 Chapter 5 is internally inconsistent on the discharge destination: its RNS design description says the relief valve discharges to the **IRWST**, while its detailed LTOP evaluation says it discharges to the **containment sump**. The destination is therefore an explicit unresolved conflict, not a resolved graph endpoint (`SRC-0712`). Unit-3 `SV3-RNS-M6-003`, the applicable isometric and ITAAC Index 372/373 records are the closure route.
 
-These branches must not be merged into one generic “relief branch.”
+These branches must not be merged into one generic “relief branch.” The earlier project phrase `containment sump/containment atmosphere` for V021 is superseded; containment atmosphere was not supported by the controlled Chapter-5 passages.
 
 ## Containment and pressure-boundary transition
 
-The certified design resolves V002B's **function**, not the missing site geometry:
+The design basis resolves more of the sequence than the earlier register carried, while exact site geometry remains open:
 
-- `RNS-PL-V002B` is the outer hot-leg suction / containment-isolation motor-operated gate valve and an ASME Class-1 / IST Category-A object (`SRC-0702`).
+- `RNS-PL-V001B` is the **inner** series hot-leg suction RCS-pressure-boundary MOV.
+- `RNS-PL-V002B` is the **outer** series hot-leg suction MOV, an ASME Class-1 / IST Category-A RCS-pressure-boundary and containment-isolation valve (`SRC-0702`).
+- Westinghouse describes the containment-isolation member of each two-valve suction pair as the valve **closest to the containment penetration** (`SRC-0714`). This fixes the V001-inner → V002-outer-nearest-penetration ordering, but does not supply a valve-to-shell distance or prove zero intervening spool length.
 - The certified RCS-to-RHR-pump containment-isolation table assigns the penetration isolation function to `RNS-PL-V002A/B`, with safety-related closure signals and the documented leak-rate-test boundary behavior (`SRC-0703`).
-- The exact Unit-3 mechanical penetration identifier, liner/sleeve/embedment, welds, coordinates, room/elevation and V001B-to-V002B centerline relationship are still open.
+- NRC's Unit-3 containment functional-arrangement inspection reviewed `SV3-RNS-M6-003` Rev.4 together with `SV3-MV50-V1-016` Rev.1, *Containment Vessel Penetration Location*. These are now the preferred retrieval pair for the exact Unit-3 mechanical penetration identifier and shell location (`SRC-0715`).
+- The exact penetration number, liner/sleeve/embedment, spool through the shell, welds, coordinates, room/elevation, restraints/supports and V001B/V002B centerline relationship remain open.
 
-No penetration number or shell geometry is to be fabricated from the functional table.
+No penetration number or shell geometry is to be fabricated from the functional tables or generic spatial language.
 
 ## V002B remains gated at exact-hardware level
 
@@ -124,12 +128,14 @@ The assembly register carries the following boundaries explicitly rather than le
 
 The highest-value next records are those that collapse multiple open fields at once:
 
-1. Current Unit-3 RNS P&ID / `SV3-RNS-M6K-FA201` / line-designation contents and the relevant suction isometrics, to place V001B/V002B, V003B/V004B, V021, V005B, V033B and V036B on exact lines and spools.
-2. Final RNS Index-361 EQRR/PCD and V002B row.
-3. `SV3-PV01-VDR-000002` V002B row and exact referenced PV01-V2 assembly drawing.
-4. `SV3-RNS-T0W-1237493` diagnostic result package.
-5. MP-01B post-disassembly reassembly/alignment/turnover work packages and the contents of the pump anchor/support drawings.
-6. V033B instrument endpoint/loop and V036B drain destination.
-7. V002B DK01 branch + P31Y ORC/feedthrough/raceway/pigtail closure and MP-01B normal feeder/control circuit.
+1. `SV3-RNS-M6-003 Rev.4` + `SV3-MV50-V1-016 Rev.1`, to identify the exact RNS suction containment penetration and shell location, then bridge that result into the suction isometric.
+2. Current Unit-3 RNS P&ID / `SV3-RNS-M6K-FA201` / line-designation contents and the relevant suction isometrics, to place V001B/V002B, V003B/V004B, V021, V005B, V033B and V036B on exact lines and spools.
+3. Unit-3 LTOP ICNs `ML18120A270` / `ML18117A424` and their referenced code-data/test records, to close V021 actual capacity/set pressure and help resolve its discharge path.
+4. Final RNS Index-361 EQRR/PCD and V002B row.
+5. `SV3-PV01-VDR-000002` V002B row and exact referenced PV01-V2 assembly drawing.
+6. `SV3-RNS-T0W-1237493` diagnostic result package.
+7. MP-01B post-disassembly reassembly/alignment/turnover work packages and the contents of the pump anchor/support drawings.
+8. V033B instrument endpoint/loop and V036B drain destination.
+9. V002B DK01 branch + P31Y ORC/feedthrough/raceway/pigtail closure and MP-01B normal feeder/control circuit.
 
 Until those records are recovered, the model should represent the unresolved interfaces as explicit graph boundaries rather than filling them with symmetry, sibling or generic-family assumptions.
