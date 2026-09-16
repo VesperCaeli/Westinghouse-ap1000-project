@@ -1,0 +1,9 @@
+# Public Source Register Supplement — P31Y / RNS V002B Electrical Trace
+
+This supplement shares the global controlled `SRC-*` namespace with the other `01_SOURCE_REGISTER*.md` files.
+
+| Source ID | Authority | Configuration | Document | Locator / accession | Use |
+|---|---|---|---|---|---|
+| SRC-0449 | A | AP1000-R19-CERTIFIED | AP1000 Design Control Document Revision 19 — Class 1E DC and Uninterruptible Power Supply System (IDS) | Tier 1 §2.6.3; Tier 2 §8.3.2, including Table 8.3.2-7; Tier 2 Table 17.4-1 | Certified architecture establishes Division A/B/C/D `250 Vdc` MCCs `IDSA-DK-1`, `IDSB-DK-1`, `IDSC-DK-1`, `IDSD-DK-1`; the DC MCCs distribute power through fusible disconnects, and the IDS supplies operating voltage to Class-1E motor-operated valves. This is the architectural basis for resolving the source-MCC family of a Division-B Class-1E MOV, but does not identify a specific bucket/fuse/terminal for RNS V002B. |
+| SRC-0450 | B | VOGTLE-3-CONSTRUCTION-PUBLIC | Vogtle Unit 3 Stone & Webster / Bechtel construction milestone schedule | Public contract exhibit, activity `C2323ES005` | Unit-3 construction milestone explicitly states activation of Class-1E DC/UPS system `IDS A/B/D DK-1` to `RNS Isolation Valve Control Power`. This independently corroborates that Unit-3 RNS isolation-valve control power is supplied from the safety-related DK-1 MCC family; it does not identify which DK-1 bucket serves V002B. |
+| SRC-0451 | A | VOGTLE-3-CONSTRUCTION-PUBLIC | NRC Integrated Inspection Report identifying Unit-3 Division-B DC MCC one-line | ADAMS ML21041A051, supplemental document list | Identifies `APP-IDSB-E3-DK101`, One Line Diagram Class 1E 250 V DC MCC `IDSB-DK-1`, Auxiliary Building Sheet 1 of 3, Revision 5, plus Westinghouse drawing `1006D75`, DK01 DC MCC / `APP-IDS-DK01` Sheet 12 Rev.2. This provides the exact drawing family to recover the V002B feeder/bucket/fuse path. Public inspection prose does not print the V002B branch assignment. |
