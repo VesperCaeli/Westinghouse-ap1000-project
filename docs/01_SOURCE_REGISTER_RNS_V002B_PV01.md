@@ -1,0 +1,7 @@
+# Public Source Register Supplement — RNS V002B / PV01 Family Bridge
+
+This supplement shares the global controlled `SRC-*` namespace with the other `01_SOURCE_REGISTER*.md` files.
+
+| Source ID | Authority | Configuration | Document | Locator / accession | Use |
+|---|---|---|---|---|---|
+| SRC-0465 | A | AP1000/VOGTLE-DESIGN-HISTORY | NRC AP1000 design-document review of safety-related RNS valve requirements against the PV01 motor-operated-valve specification | ADAMS ML112440588, design-document review narrative and reviewed-document list | NRC states that inspectors evaluated safety-related valve functional/design requirements and compared `APP-PV01-Z0-001`, *3 in. and Larger Motor Operated Gate and Globe Valves, ASME Section III Classes 1, 2 and 3*, against `APP-RNS-M3C-100`, *RNS Component Control Requirements*, to verify consistency. The same inspection identifies `APP-RNS-M3C-050` as the MOV functional-requirements document specifically covering RNS hot-leg suction isolation valves V001A/B and V002A/B. This is sufficient to treat PV01 as the design commodity/specification family applicable to the V001/V002 RNS MOV requirement set. It does **not** identify the individual PV01 datasheet, vendor/model, actuator model, or Unit-3 as-built serial for `RNS-PL-V002B`; `APP-PV01-Z0D-116` and Flowserve/Limitorque remain unresolved until a primary tag-to-datasheet/as-built record is recovered. |
