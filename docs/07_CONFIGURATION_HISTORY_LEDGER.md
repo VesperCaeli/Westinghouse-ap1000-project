@@ -116,6 +116,23 @@ A historical feature remains useful evidence, but it must not be instantiated as
 
 **Controlled sources:** SRC-0413; SRC-0406; SRC-0429; SRC-0422; SRC-0425.
 
+## CHG-009 — Class-1E 24-hour DC voltage change / RNS MOV supply
+
+**Older public description:** Earlier AP1000 safety-evaluation/design material can describe the safety-related RNS suction motor-operated valves and associated 24-hour Class-1E dc architecture as 125 Vdc.
+
+**Change:** NUREG-1793 Supplement 2 explicitly states that the nominal voltage of the AP1000 24-hour batteries was changed from **125 Vdc to 250 Vdc**, directs the technical review of that modification to Section 8.3.2 of the safety evaluation, and states that Westinghouse subsequently incorporated the change into the DCD.
+
+**Current evidence:** Revision 19 Tier 2 Section 8.3.2 defines four independent Class-1E **250 Vdc** divisions and identifies motor-operated valves as loads on the 250-Vdc MCCs. Unit-3 public records independently identify `IDSB-DK-1` as an installed Class-1E 250-Vdc MCC and the resolved source-MCC family for the Division-B RNS V002B path.
+
+**Disposition:**
+- older 125-Vdc safety-related 24-hour/RNS-MOV supply description: `SUPERSEDED` / history only.
+- Class-1E 250-Vdc source/distribution architecture: `CURRENT_BASELINE`.
+- Unit-3 `IDSB-DK-1` 250-Vdc source-MCC family for `RNS-PL-V002B`: `PLANT_SPECIFIC_CURRENT`.
+- `SV3-RNS-EW-PLV002BBXB` 600-V value remains the **cable rating**, not motor operating voltage.
+- V002B motor nameplate voltage, loaded terminal voltage, FLA/LRA, exact outgoing cubicle and fuse remain `UNRESOLVED_CONFIG` until the current one-line/Appendix-F/diagnostic records are recovered.
+
+**Controlled sources:** SRC-0467; SRC-0449; SRC-0450; SRC-0451; SRC-0452; SRC-0422.
+
 ## Rule for future changes
 
 Every newly discovered public design change that alters component type, quantity, tag, location, routing, material, actuation, support, electrical interface, or installed/removed status gets a ledger entry before the newer detail is allowed to overwrite an existing canonical object. The canonical database should reference the current feature; the historical feature remains queryable here or in a dedicated system-level configuration register.
