@@ -1,0 +1,2 @@
+isometric,piping_install_work_package,support_install_work_package,line_numbers,evidence_status,notes
+SV3-RNS-PLW-021,SV3-RNS-P0W-ME5497,SV3-RNS-PHW-861877,"RNS-PL-L040; RNS-PL-L061; RNS-PL-L062",A-direct,"P0W-ME5497 explicitly fabricates/installs PLW-021 and its three line numbers. PHW-861877 explicitly fabricates/installs pipe supports for PLW-021. Do not assign individual supports to V020/V021/V061 until tag-specific drawing evidence is found."
