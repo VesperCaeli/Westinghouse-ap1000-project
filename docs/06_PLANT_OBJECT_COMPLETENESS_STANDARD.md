@@ -20,6 +20,27 @@ The default physical hierarchy is:
 
 The lowest modeled level is whichever level public evidence supports. If a drawing exposes individual bolts, clips, welds, connectors, cartridges, plates, bearings, seals, or terminals, those items enter the database rather than being hidden inside a parent object.
 
+## Loop / area scope rule
+
+For this project, a named **loop**, **train**, **system area**, or similar reconstruction scope means the complete physical plant volume and all infrastructure required to build, operate, monitor, protect, access, inspect, maintain and remove the equipment in that scope. It does **not** mean only the process-fluid path.
+
+Accordingly, loop/area closure must include or explicitly disposition, as applicable:
+
+- exact room/zone/elevation boundaries and floor-plan geometry;
+- adjacent rooms, corridors, doors, hatches, stairs, ladders, platforms and egress paths;
+- equipment footprints, orientation, elevations, laydown zones and maintenance/removal clearances;
+- all process piping/ducting, fittings, valves, supports, restraints, insulation, penetrations and weld/joint populations;
+- HVAC/ventilation supply, return and exhaust paths, local unit coolers, coils, dampers, filters, drains and environmental controls;
+- electrical power distribution, starters/breakers/disconnects, panels/MCCs, cable, conduit, tray, junction boxes, grounding and room-service electrical loads;
+- instrumentation, probes, process taps, sample points, analyzers, radiation monitoring, local indicators, cabinets and control/signal paths;
+- fire detection, suppression, barriers, penetration seals and combustible-control interfaces;
+- floor/equipment/condensate drains, sumps, leak collection, vents, fills, flushes, test connections and waste destinations;
+- permanent maintenance hardware including hatches, padeyes, monorails, hoists, cranes, removable panels, special fixtures/tooling and rigging routes;
+- civil/structural boundaries, wall/floor/ceiling modules, embeds, foundations and load paths;
+- all system-specific internals and functional hardware within the area, including reactor-vessel internals, fuel/core objects, control rods/drive mechanisms, vessel-head assemblies and in-core/ex-core monitoring where the scope is the primary reactor loop/area.
+
+A loop/area completeness percentage must therefore be based on this full scope. Process-topology, licensing-evidence, piping-geometry, electrical, HVAC, spatial/architectural, maintenance, I&C, civil/structural and equipment-internal progress may be reported separately, but none of those partial metrics may be presented as the completion percentage of the full loop.
+
 ## Mandatory completeness domains
 
 Every equipment object must be audited against all applicable domains.
