@@ -133,6 +133,24 @@ A historical feature remains useful evidence, but it must not be instantiated as
 
 **Controlled sources:** SRC-0467; SRC-0449; SRC-0450; SRC-0451; SRC-0452; SRC-0422.
 
+
+## CHG-010 — RNS relief-valve discharge piping design evolution
+
+**Conflicting older public descriptions:** Older AP1000 public material does not present a single stable relief-discharge description across the full design chronology. Some early/generic material describes the RNS LTOP relief discharge differently from later NRC and Vogtle plant-specific sources.
+
+**Controlled design-change evidence:** Westinghouse Design Reference Point Revision 10 identifies `APP-GW-GEE-2028 Rev.0`, **RNS Relief Valve Discharge Piping Changes**, final approval 9-Sep-2010. This proves that the relief-discharge piping underwent a controlled design change, but the public design-reference register does not disclose the before/after routing.
+
+**Later Vogtle evidence:** LAR-17-022 / Amendment 104 establishes the final Vogtle dual-relief configuration with added `RNS-PL-V020` in parallel with retained `RNS-PL-V021`; the plant-specific licensing basis explicitly places V020 discharge at the WLS containment sump and strongly corroborates the same final receiving boundary for V021.
+
+**Disposition:**
+- pre-GEE-2028 relief-discharge routing: `HISTORY_UNRESOLVED`.
+- direction/content of the GEE-2028 piping change: `UNRESOLVED_CONFIG` pending DCP body / affected drawings.
+- GEE-2028 title as evidence of a design change: `VERIFIED_HISTORY`.
+- final Vogtle WLS containment-sump receiving boundary: `PLANT_SPECIFIC_CURRENT`.
+- exact final V020/V021 outlet line numbers, recombination geometry, supports and sump nozzle/interface: `UNRESOLVED_CONFIG`.
+
+**Controlled sources:** SRC-0953 for GEE-2028; SRC-0735/SRC-0741 for final Vogtle plant-specific configuration.
+
 ## Rule for future changes
 
 Every newly discovered public design change that alters component type, quantity, tag, location, routing, material, actuation, support, electrical interface, or installed/removed status gets a ledger entry before the newer detail is allowed to overwrite an existing canonical object. The canonical database should reference the current feature; the historical feature remains queryable here or in a dedicated system-level configuration register.
