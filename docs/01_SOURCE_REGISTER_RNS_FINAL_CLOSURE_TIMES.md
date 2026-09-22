@@ -1,0 +1,7 @@
+# Public Source Register Supplement — Unit 3 RNS Final Closure-Time Results
+
+This supplement shares the global controlled `SRC-*` namespace. It records tag-specific Unit-3 aggregate closure-time results for the RNS containment/isolation valve population. These results close the measured demand-to-fully-closed interval only; they are not diagnostic thrust/torque, motor-current, differential-pressure or travel-profile records.
+
+| Source ID | Authority | Configuration | Document | Locator / accession | Use |
+|---|---|---|---|---|---|
+| SRC-0776 | A | VOGTLE-3-RNS-CONTAINMENT-ISOLATION-CLOSURE-TIMES | Southern Nuclear Unit-3 ITAAC 2.2.01.07.ii / Index 108 containment-isolation valve closure-time completion | ADAMS `ML21252A736`, ND-20-0902 Enclosure Attachment A | Final Unit-3 completion evidence reports the following RNS actual closure times against the <=60-s criterion: `RNS-PL-V002A` **29 s** (`B-GEN-ITPCI-039-F171`); `RNS-PL-V002B` **30 s** (`F172`); `RNS-PL-V011` **29 s** (`F173`); `RNS-PL-V022` **24 s** (`F174`); `RNS-PL-V023` **29 s** (`F175`); and `RNS-PL-V061` **4 s** (`GEN-OTS-10-002` / `B-GEN-ITPCI-039-F176`). Carry each value only as the measured aggregate Unit-3 closure interval for the documented test. Do not infer linear valve travel, opening time, individual switch transition timing, test differential pressure/flow, actuator thrust/torque, motor current/voltage, pneumatic stroking pressure or final setup margins from these aggregate times. |

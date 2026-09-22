@@ -1,0 +1,19 @@
+# Public Source Register Supplement — RNS Index-355 Closure Recovery
+
+This supplement controls the recovery of the consolidated RNS ASME piping ITAAC `2.3.06.02a` / Index 355 and prevents neighboring ITAAC records from being misattributed to it.
+
+| Source ID | Authority | Configuration | Document | Locator / accession | Use |
+|---|---|---|---|---|---|
+| SRC-0912 | C | VOGTLE-3-INDEX355-ICN-INDEXED-IDENTITY | Public NRC-record cross-reference/index entry for Southern Nuclear letter `ND-21-0744` | Indexed title: *Vogtle Electric Generating Plant, Unit 3, ITAAC Closure Notification on Completion of ITAAC 2.3.06.02a (Index Number 355)* | Carry `ND-21-0744` as the exact Unit-3 Index-355 ICN document-number retrieval target. The underlying ADAMS accession and Attachment-B/body content have **not** yet been recovered through the current public path. Do not promote any report number, line-to-isometric mapping or Attachment-B value from the indexed title alone. |
+| SRC-0913 | A | VOGTLE-3-INDEX355-NRC-SUCCESS-DETERMINATION | NRC Federal Register determination of successful ITAAC completion | 87 FR 50126, 15-Aug-2022, Docket Nos. 52-025 and 52-026; NRC-2008-0252 | NRC states that Southern Nuclear submitted ICNs and that the specified inspections/tests/analyses were successfully completed with acceptance criteria met; the Unit-3 list explicitly includes `2.3.06.02a (355)`. This proves Index 355 had reached the NRC successful-completion determination population by that notice. It does not expose the ICN's Attachment B or individual RNS line/report assignments. |
+| SRC-0914 | A | VOGTLE-4-INDEX355-EARLY-UIN-STATE | NRC Vogtle Unit-4 ITAAC Review Status Report | NRC VOG4 ITAAC Review Status Report, report print date 13-May-2020; Index 355 | The status report lists `2.3.06.02a` Index 355 with **ICN Not Received**, while the uncompleted-ITAAC notification is `ML18117A341` and its NRC review/checklist route is `ML18141A459`. Use this only as early chronology and as the UIN completion-methodology route; it is not the final Unit-4 closure record. |
+| SRC-0915 | C | VOGTLE-INDEX355-MISATTRIBUTION-GUARD | Cross-record reconciliation | `ND-21-0973` vs `ND-21-0744` | A prior search snippet could be read as associating `ND-21-0973` with Index 355. Cross-record reconciliation instead places `ND-21-0744` on Index 355 and `ND-21-0973` on a neighboring RNS ITAAC. The project therefore rejects `ND-21-0973` as an Index-355 source unless a primary controlled record explicitly proves otherwise. This row exists to stop the false association from re-entering the graph. |
+
+| SRC-0916 | A | VOGTLE-4-RNS-LINE-DESIGNATION-TABLE-CONTROL | NRC Vogtle Unit-4 construction inspection | ADAMS `ML23198A380`, Section 1A11 | NRC explicitly lists `APP-RNS-M6X-004`, *RNS Pipe Line Designation Table*, Revision 2. In the inspection scope, inspectors state that they independently walked down ASME Class-1 RCS/PXS/CVS/RNS piping and assessed the as-built installation against the mechanical-insulation specification, **pipe line designation tables**, and P&IDs. This establishes Rev.2 as an actively used configuration-control source, not merely a document-list artifact. Recover its actual table body and the `RNS-L090` row before assigning the line to any isometric. |
+
+## Closure rules
+
+- The exact Unit-3 ICN document number is useful as a retrieval key, but **not** as a substitute for the ICN body or Attachment B.
+- Unit 3 may be used to learn the final Index-355 evidence architecture, but Unit-3 line/report/isometric assignments are not copied into Unit 4.
+- Unit-4 `RNS-L090 ↔ SV4-RNS-PLW-090` remains amber until a Unit-4 controlled record prints the identity or establishes an unambiguous controlled chain.
+- Neighboring RNS ITAAC document numbers are not accepted based on search-snippet proximity.

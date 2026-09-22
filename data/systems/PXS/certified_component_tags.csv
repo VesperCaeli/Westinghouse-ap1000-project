@@ -1,0 +1,55 @@
+tag_id,system,equipment_name,component_type,group_or_path,configuration,evidence_state,source_ids,source_locator,status,notes
+RCS-PL-V001A,RCS/ADS,First-stage ADS control/depressurization MOV,motor_operated_valve,Stage 1 path A,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002;SRC-0007,DCD Rev.19 Tier 1/Table 3.7-1 and ITAAC/COL Appendix C,ACTIVE,4-in DC MOV; series with V011A
+RCS-PL-V001B,RCS/ADS,First-stage ADS control/depressurization MOV,motor_operated_valve,Stage 1 path B,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002;SRC-0007,DCD Rev.19 Tier 1/Table 3.7-1 and ITAAC/COL Appendix C,ACTIVE,4-in DC MOV; series with V011B
+RCS-PL-V011A,RCS/ADS,First-stage ADS isolation MOV,motor_operated_valve,Stage 1 path A,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1/Table 3.7-1 / COL Appendix C,ACTIVE,Series upstream isolation valve for V001A
+RCS-PL-V011B,RCS/ADS,First-stage ADS isolation MOV,motor_operated_valve,Stage 1 path B,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1/Table 3.7-1 / COL Appendix C,ACTIVE,Series upstream isolation valve for V001B
+RCS-PL-V002A,RCS/ADS,Second-stage ADS control/depressurization MOV,motor_operated_valve,Stage 2 path A,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002;SRC-0007,DCD Rev.19 / COL Appendix C,ACTIVE,8-in DC MOV; series with V012A
+RCS-PL-V002B,RCS/ADS,Second-stage ADS control/depressurization MOV,motor_operated_valve,Stage 2 path B,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002;SRC-0007,DCD Rev.19 / COL Appendix C,ACTIVE,8-in DC MOV; series with V012B
+RCS-PL-V012A,RCS/ADS,Second-stage ADS isolation MOV,motor_operated_valve,Stage 2 path A,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1/Table 3.7-1 / COL Appendix C,ACTIVE,
+RCS-PL-V012B,RCS/ADS,Second-stage ADS isolation MOV,motor_operated_valve,Stage 2 path B,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1/Table 3.7-1 / COL Appendix C,ACTIVE,
+RCS-PL-V003A,RCS/ADS,Third-stage ADS control/depressurization MOV,motor_operated_valve,Stage 3 path A,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002;SRC-0007,DCD Rev.19 / COL Appendix C,ACTIVE,8-in DC MOV; series with V013A
+RCS-PL-V003B,RCS/ADS,Third-stage ADS control/depressurization MOV,motor_operated_valve,Stage 3 path B,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002;SRC-0007,DCD Rev.19 / COL Appendix C,ACTIVE,8-in DC MOV; series with V013B
+RCS-PL-V013A,RCS/ADS,Third-stage ADS isolation MOV,motor_operated_valve,Stage 3 path A,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1/Table 3.7-1 / COL Appendix C,ACTIVE,
+RCS-PL-V013B,RCS/ADS,Third-stage ADS isolation MOV,motor_operated_valve,Stage 3 path B,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1/Table 3.7-1 / COL Appendix C,ACTIVE,
+RCS-PL-V004A,RCS/ADS,Fourth-stage ADS squib valve,squib_valve,Stage 4 path A,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002;SRC-0007,DCD Rev.19 / COL Appendix C,ACTIVE,14-in squib; plant-specific path/room mapping in Vogtle geometry file
+RCS-PL-V004B,RCS/ADS,Fourth-stage ADS squib valve,squib_valve,Stage 4 path B,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002;SRC-0007,DCD Rev.19 / COL Appendix C,ACTIVE,
+RCS-PL-V004C,RCS/ADS,Fourth-stage ADS squib valve,squib_valve,Stage 4 path C,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002;SRC-0007,DCD Rev.19 / COL Appendix C,ACTIVE,
+RCS-PL-V004D,RCS/ADS,Fourth-stage ADS squib valve,squib_valve,Stage 4 path D,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002;SRC-0007,DCD Rev.19 / COL Appendix C,ACTIVE,
+RCS-PL-V014A,RCS/ADS,Fourth-stage ADS MOV,motor_operated_valve,Stage 4 path A,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 / COL Appendix C,ACTIVE,Normally open
+RCS-PL-V014B,RCS/ADS,Fourth-stage ADS MOV,motor_operated_valve,Stage 4 path B,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 / COL Appendix C,ACTIVE,Normally open
+RCS-PL-V014C,RCS/ADS,Fourth-stage ADS MOV,motor_operated_valve,Stage 4 path C,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 / COL Appendix C,ACTIVE,Normally open
+RCS-PL-V014D,RCS/ADS,Fourth-stage ADS MOV,motor_operated_valve,Stage 4 path D,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 / COL Appendix C,ACTIVE,Normally open
+RCS-PL-V010A,RCS/ADS,ADS discharge header A vacuum relief valve,vacuum_relief_valve,Common discharge A,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002;SRC-0011,COL Appendix C / NUREG-1793 Ch.5,ACTIVE,Prevents excessive vacuum/backflow following steam condensation
+RCS-PL-V010B,RCS/ADS,ADS discharge header B vacuum relief valve,vacuum_relief_valve,Common discharge B,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002;SRC-0011,COL Appendix C / NUREG-1793 Ch.5,ACTIVE,
+RCS-PL-V150A,RCS,RV head vent valve,motor_operated_or_active_valve,RVHVS,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,COL Appendix C equipment list,ACTIVE,Plant-specific valve type/topology reconciliation pending
+RCS-PL-V150B,RCS,RV head vent valve,motor_operated_or_active_valve,RVHVS,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,COL Appendix C equipment list,ACTIVE,
+RCS-PL-V150C,RCS,RV head vent valve,motor_operated_or_active_valve,RVHVS,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,COL Appendix C equipment list,ACTIVE,
+RCS-PL-V150D,RCS,RV head vent valve,motor_operated_or_active_valve,RVHVS,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,COL Appendix C equipment list,ACTIVE,
+PXS-PL-V014A,PXS,CMT discharge isolation AOV,air_operated_valve,CMT train A,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,One of two parallel fail-open CMT AOVs
+PXS-PL-V014B,PXS,CMT discharge isolation AOV,air_operated_valve,CMT train B,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,
+PXS-PL-V015A,PXS,CMT discharge isolation AOV,air_operated_valve,CMT train A,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,Second parallel AOV
+PXS-PL-V015B,PXS,CMT discharge isolation AOV,air_operated_valve,CMT train B,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,
+PXS-PL-V016A,PXS,CMT discharge check valve,check_valve,CMT train A,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,One of series pair
+PXS-PL-V016B,PXS,CMT discharge check valve,check_valve,CMT train B,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,
+PXS-PL-V017A,PXS,CMT discharge check valve,check_valve,CMT train A,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,Second of series pair
+PXS-PL-V017B,PXS,CMT discharge check valve,check_valve,CMT train B,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,
+PXS-PL-V028A,PXS,Accumulator discharge check valve,check_valve,Accumulator train A,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,One of series pair
+PXS-PL-V028B,PXS,Accumulator discharge check valve,check_valve,Accumulator train B,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,
+PXS-PL-V029A,PXS,Accumulator discharge check valve,check_valve,Accumulator train A,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,Second of series pair
+PXS-PL-V029B,PXS,Accumulator discharge check valve,check_valve,Accumulator train B,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,
+PXS-PL-V108A,PXS,PRHR heat exchanger control valve,air_operated_valve,PRHR parallel branch A,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,Fail-open PRHR actuation valve
+PXS-PL-V108B,PXS,PRHR heat exchanger control valve,air_operated_valve,PRHR parallel branch B,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,Fail-open PRHR actuation valve
+PXS-PL-V118A,PXS,Containment recirculation squib valve,squib_valve,Recirculation train A,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,
+PXS-PL-V118B,PXS,Containment recirculation squib valve,squib_valve,Recirculation train B,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,
+PXS-PL-V120A,PXS,Containment recirculation squib valve,squib_valve,Recirculation train A,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,Second parallel recirculation branch
+PXS-PL-V120B,PXS,Containment recirculation squib valve,squib_valve,Recirculation train B,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,
+PXS-PL-V122A,PXS,IRWST injection check valve,check_valve,IRWST injection train A,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,One parallel check/squib branch
+PXS-PL-V122B,PXS,IRWST injection check valve,check_valve,IRWST injection train B,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,
+PXS-PL-V123A,PXS,IRWST injection squib valve,squib_valve,IRWST injection train A,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,Series with V122A in one parallel branch
+PXS-PL-V123B,PXS,IRWST injection squib valve,squib_valve,IRWST injection train B,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,
+PXS-PL-V124A,PXS,IRWST injection check valve,check_valve,IRWST injection train A,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,Second parallel check/squib branch
+PXS-PL-V124B,PXS,IRWST injection check valve,check_valve,IRWST injection train B,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,
+PXS-PL-V125A,PXS,IRWST injection squib valve,squib_valve,IRWST injection train A,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,Series with V124A
+PXS-PL-V125B,PXS,IRWST injection squib valve,squib_valve,IRWST injection train B,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,
+PXS-PL-V130A,PXS,IRWST gutter bypass/drain isolation valve,isolation_valve,Condensate recovery A,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,Supports return of collected containment condensate to IRWST during PRHR operation
+PXS-PL-V130B,PXS,IRWST gutter bypass/drain isolation valve,isolation_valve,Condensate recovery B,AP1000-DCD-R19-GENERIC,VERIFIED_PUBLIC,SRC-0002,DCD Rev.19 Tier 1 Table 3.7-1,ACTIVE,

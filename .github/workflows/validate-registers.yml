@@ -18,5 +18,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Validate master registers
+      - name: Validate master and system registers
         run: python scripts/validate_registers.py
+      - name: Report plant-object completeness
+        run: python scripts/completeness_report.py
