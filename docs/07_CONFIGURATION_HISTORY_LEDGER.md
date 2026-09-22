@@ -151,6 +151,23 @@ A historical feature remains useful evidence, but it must not be instantiated as
 
 **Controlled sources:** SRC-0953 for GEE-2028; SRC-0735/SRC-0741 for final Vogtle plant-specific configuration.
 
+
+## CHG-011 — UK/EUR RNS topology separation from Vogtle
+
+**UK-specific design evidence:** ONR `ONR-NR-AR-16-020` states that under Europe-specific DCP `EPS-GW-GEE-001`, the UK AP1000 RNS suction divides into two parallel trains with two separate containment penetrations, separate outside-containment isolation valves, and separate piping to RNS Pumps A and B.
+
+**Vogtle evidence:** Independent Vogtle Unit-3 construction/ITAAC/licensing evidence controls a different topology in which the two inside-containment V001/V002 branches recombine into a **common RNS suction header before P19**, cross containment through **P19 / SV3-RNS-PY-C01**, pass the outboard common-header isolation MOV `RNS-PL-V022`, then split toward the pumps.
+
+**Related DCP caution:** `APP-GW-GEE-4166`, *RCS/RNS Suction Line Reconfiguration and Reconciliation*, appears in the UK GDA Design Reference Point. No recovered U.S. NRC/Vogtle record currently proves its resulting geometry was implemented at Vogtle. It therefore remains an applicability gate, not a Vogtle geometry source.
+
+**Disposition:**
+- UK/EUR two-penetration RNS suction topology: `UK_CONFIGURATION_ONLY`.
+- Vogtle common-header/P19/V022 topology: `VOGTLE_PLANT_SPECIFIC_CURRENT`.
+- importing UK penetration count/outboard-valve arrangement into Vogtle: `PROHIBITED_INFERENCE`.
+- `APP-GW-GEE-4166` Vogtle applicability: `UNRESOLVED_CONFIG` pending U.S./site implementation bridge.
+
+**Controlled sources:** SRC-0966, SRC-0969, SRC-0970; Vogtle topology sources remain controlled in the RNS site-geometry overlay.
+
 ## Rule for future changes
 
 Every newly discovered public design change that alters component type, quantity, tag, location, routing, material, actuation, support, electrical interface, or installed/removed status gets a ledger entry before the newer detail is allowed to overwrite an existing canonical object. The canonical database should reference the current feature; the historical feature remains queryable here or in a dedicated system-level configuration register.
